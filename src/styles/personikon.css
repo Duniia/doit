@@ -1,0 +1,14 @@
+/*stylet af Michelle */
+
+.ikon {
+    height: 35px; 
+    width: 35px;
+    border-radius: 50%;
+    background: white; 
+    position: relative;
+    right: 10px; 
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}; 

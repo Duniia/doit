@@ -1,0 +1,86 @@
+/*stylet af Michelle */
+.Top { 
+    background: rgb(255,222,203);
+    height: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    }; 
+    
+    h1 {
+      font-family: 'Fuzzy Bubbles' 'Sans serif';
+      font-size: 25px; 
+      font-weight: lighter;   
+      position: relative;
+      top: 8px; 
+      left:10px;
+    };
+    
+    .box {
+      height: 275px; 
+      display: flex;
+      align-items: flex-end;
+    }; 
+    
+    .Container {
+      height: 235px; 
+      width: 310px;
+      border-radius: 30px; 
+      background: #F9F9F9;
+      filter: drop-shadow(0px 4px 4px #edebeb);
+      margin: 10px; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between;
+    };
+    
+    .opgave_container {
+      height: 45px; 
+      width: 271px; 
+      background: white;
+      border-radius: 15px;
+      filter: drop-shadow(0px 4px 4px #edebeb);
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+    };
+    
+    .Opgave1{
+      position: relative;
+      bottom: 15px; 
+      left: 10px; 
+    };
+    
+    .Opgave_container2 {
+      height: 45px; 
+      width: 271px; 
+      background: white;
+      border-radius: 15px;
+      filter: drop-shadow(0px 4px 4px #edebeb);
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+    };
+    
+    .Opgave2{
+      position: relative;
+      bottom: 30px; 
+      left: 10px; 
+    };
+    
+    
+    .List_container{
+      height: 125px; 
+      display: flex;
+      justify-content: space-around;
+      margin-top: 35px; 
+    };
+    
+    .addnew {
+      height: 60px;  
+      position: relative;
+      top: 50px; 
+      display: flex;
+      justify-content: center;
+    };
