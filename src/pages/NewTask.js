@@ -1,6 +1,5 @@
 // kodet af Michelle
-
-import React from "react";
+import React , {useState} from "react";
 import { NavLink } from "react-router-dom";
 import '../styles/newtask.css';
 import {BsArrowLeft} from 'react-icons/bs'
@@ -8,7 +7,9 @@ import PersonIkon from '../components/PersonIkon';
 import InsertText from '../components/InsertText';
 
 
-export default function Top() {
+export default function NewTask() {
+
+    const [isToggled, setIsToogled] =useState(false)
 
     return (
         <>
@@ -39,9 +40,8 @@ export default function Top() {
              <PersonIkon />
              <PersonIkon />
             </div>
-            <button className="Todo_btn">
-             <h4>Add task</h4>
-            </button>
+            <Switch rounded={true} isToogled={isToggled} 
+            onToogle={() => setIsToogled(!isToggled)}/>
         </div>
         </section>
         </>
