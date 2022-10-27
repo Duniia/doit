@@ -1,3 +1,5 @@
+// kodet af Michelle
+
 import React from "react";
 import '../styles/newtask.css';
 import {BsArrowLeft} from 'react-icons/bs'
@@ -6,7 +8,6 @@ import InsertText from '../components/InsertText';
 
 
 export default function Top() {
-
 
     return (
         <>
