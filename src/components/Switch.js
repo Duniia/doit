@@ -1,3 +1,5 @@
+// Kodet af Michelle
+
 import React from "react";
 import '../styles/switch.css';
 import cx from "classnames";
