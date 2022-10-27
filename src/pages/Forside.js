@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/forside.css';
-import PersonIkon from './components/PersonIkon.js';
-import Opgaver from './components/Opgaver.js';
-import Overskrift from './components/Overskrift.js';
-import OpgaveTitle from './components/OpgaveTitle.js';
-import Button from './components/Button.js';
-import Lists from './components/Lists.js';
-import AddTask from './components/AddTask.js'; 
+import PersonIkon from '../components/PersonIkon';
+import Opgaver from '../components/Opgaver';
+import Overskrift from '../components/Overskrift';
+import OpgaveTitle from '../components/OpgaveTitle';
+import Button from '../components/Button';
+import Lists from '../components/Lists';
+import AddTask from '../components/AddTask'; 
 
 // kodet af Michelle
 
