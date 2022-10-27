@@ -9,6 +9,7 @@
     font-size: 12px; 
     display: flex; 
     justify-content: space-between;
+    cursor: pointer;
 } 
 
 .plus {
