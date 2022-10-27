@@ -1,6 +1,7 @@
 // kodet af Michelle
 
 import React from "react";
+import { NavLink } from "react-router-dom";
 import '../styles/newtask.css';
 import {BsArrowLeft} from 'react-icons/bs'
 import PersonIkon from '../components/PersonIkon';
@@ -14,7 +15,7 @@ export default function Top() {
         <section className="wrapper">
         <div className="T">
         <div className="tilbage_pil">
-        <BsArrowLeft/>
+        <NavLink to="/"><BsArrowLeft /></NavLink>
         </div>
         </div>
         
