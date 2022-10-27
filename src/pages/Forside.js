@@ -7,6 +7,7 @@ import OpgaveTitle from '../components/OpgaveTitle';
 import Button from '../components/Button';
 import Lists from '../components/Lists';
 import AddTask from '../components/AddTask'; 
+import {BsArrowsAngleExpand} from 'react-icons/bs'
 
 // kodet af Michelle
 
@@ -43,6 +44,7 @@ export default function App() {
 
     <section className="List_container">
       <Lists/>
+      <BsArrowsAngleExpand/>
      </section>
 
      <section className="addnew">

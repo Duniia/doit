@@ -9,7 +9,8 @@
     font-size: 12px; 
     display: flex; 
     justify-content: space-between;
-}; 
+    cursor: pointer;
+} 
 
 .plus {
     height: 35px; 
@@ -18,4 +19,4 @@
     position: relative;
     right: 5px;   
     font-size: 35px;
-}; 
+} 
