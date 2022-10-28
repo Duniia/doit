@@ -1,7 +1,6 @@
 // Kodet af Dunia
 import React from 'react';
 import { useState } from 'react';
-import '../styles/personlig.scss'
 import ToDoItems from '../components/ToDoItems';
 import ToDoForm from '../components/ToDoForm';
 import Button from '../components/Button';

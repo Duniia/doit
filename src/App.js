@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from './components/Nav';
 import './styles/nav.css';
+import './styles/personlig.css';
 import Forside from './pages/Forside'
 import MedlemmerPage from "./pages/MedlemmerPage";
 import SettingsPage from "./pages/SettingsPage";
