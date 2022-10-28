@@ -16,6 +16,7 @@ $font-color-white: #f1f1f1;
         rgba(255,222,203,0.6954131994594712) 0%, 
         rgba(255,219,199,0.7962535355939251) 45%, 
         rgba(114,230,255,0.1632003143054097) 90%);
+// insert this when you want the backround color: @include background; (no "background:....")
 }
 
 // box-shadow
