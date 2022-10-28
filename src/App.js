@@ -13,7 +13,6 @@ import NewTask from "./pages/NewTask";
 import Household from "./pages/Household";
 import SignIn from './pages/Signin';
 import Register from './pages/Register';
-import HomePage from './pages/Homepage';
 
 function App() {
   return (
