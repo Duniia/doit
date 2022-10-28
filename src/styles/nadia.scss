@@ -1,7 +1,7 @@
 /*  Nadia*/
 
 /* ------- MEDLEMMER SIDE ------- */
-/* intro/header */
+
 @import 'variables.scss';
 
 // * {
@@ -9,6 +9,7 @@
 //   margin: 0;
 // }
 
+/* intro/header */
 .medlemmertest {
   height: 100vh;
   width: 100%;
@@ -21,7 +22,7 @@
     margin-top: 20px;
   }
 }
-/* intro  */
+/* intro - tekst */
 
 .medlemmertest-text {
   font-family: $font-two;
