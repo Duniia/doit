@@ -19,7 +19,6 @@ function App() {
     <>
       <Nav/>
       <Routes>
-        {/* <Route path="/" element={<SignIn/>}/> */}
         <Route path="forside" element={<Forside />}/>
         <Route path="Personlig" element={<Personlig />}/>
         <Route path="medlemmer" element={<MedlemmerPage />}/>
@@ -30,8 +29,8 @@ function App() {
         <Route path="/" element={<SignIn/>}/>
         <Route path="register" element={<Register/>}/>
         <Route path="/forside/:currentUser" element={<Forside />} />
-        </Routes>
-        </>
+      </Routes>
+    </>
   );
 }
 
