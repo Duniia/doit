@@ -151,7 +151,7 @@
       box-shadow: $box-shadow;
       border-radius: 70px;
       margin-bottom: 2px;
-      }
+    }
 
     /* log ud knap */
     .button-log {
@@ -163,7 +163,7 @@
       display: inline-block;
       border-radius: 25px;
       font-size: 14px;
-      margin-top: 16px;
+      margin-top: 10px;
     }
   }
 
@@ -220,6 +220,7 @@
       text-align: center;
       justify-content: center;
       cursor: pointer;
+      overflow: visible !important;
     }
   }
 
