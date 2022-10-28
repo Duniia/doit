@@ -90,7 +90,7 @@ function Personlig() {
      </div>
    </section>
     </div>
-    <ToDoForm addTodo={addTodo}/>
+    {/* <ToDoForm addTodo={addTodo}/> */}
     </>
   )
 }
