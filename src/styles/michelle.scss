@@ -51,68 +51,73 @@
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
+
+    h1 {
+        font-family: $font-two;
+        font-size: 25px;   
+        position: relative;
+        top: 8px; 
+        left:10px;
+      }
     }
     
-    h1 {
-      font-family: $font-two;
-      font-size: 25px;   
-      position: relative;
-      top: 8px; 
-      left:10px;
-    }
+  
     
     .box {
       height: 275px; 
       display: flex;
       align-items: flex-end;
+
+      .Container {
+        height: 235px; 
+        width: 310px;
+        border-radius: 30px; 
+        background: $white;
+        box-shadow: $box-shadow;
+        margin: 10px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+      }
+
+      
+       .opgave_container {
+        height: 45px; 
+        width: 271px; 
+        background: $white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+  
+        
+      }
+      .Opgave1{
+        position: relative;
+        bottom: 15px; 
+        left: 10px; 
+      }
+
+      
+     .Opgave_container2 {
+        height: 45px; 
+        width: 271px; 
+        background: $white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .Opgave2{
+        position: relative;
+        bottom: 30px; 
+        left: 10px; 
+      }
+      
     }
-    
-    .Container {
-      height: 235px; 
-      width: 310px;
-      border-radius: 30px; 
-      background: $white;
-      box-shadow: $box-shadow;
-      margin: 10px; 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-between;
-    }
-    
-    .opgave_container {
-      height: 45px; 
-      width: 271px; 
-      background: $white;
-      border-radius: 15px;
-      box-shadow: $box-shadow;
-      display: flex; 
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .Opgave1{
-      position: relative;
-      bottom: 15px; 
-      left: 10px; 
-    }
-    
-    .Opgave_container2 {
-      height: 45px; 
-      width: 271px; 
-      background: $white;
-      border-radius: 15px;
-      box-shadow: $box-shadow;
-      display: flex; 
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .Opgave2{
-      position: relative;
-      bottom: 30px; 
-      left: 10px; 
-    }
-    
     
     .List_container{
       height: 125px; 
@@ -267,11 +272,15 @@
 
     // styling til overskriften componenten på forsiden (props) 
 
-    h2 {
-        position: relative; 
-        top: 10px; 
-        left: 10px; 
-    }  
+
+    .overskrift {
+        h2 {
+            position: relative; 
+            top: 10px; 
+            left: 10px; 
+        } 
+    }
+  
 
     // styling til personIkon componenten 
     .ikon {
