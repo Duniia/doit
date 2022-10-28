@@ -12,7 +12,7 @@ import AddTask from '../components/AddTask';
 
 // kodet af Michelle
 
-export default function App() {
+export default function Forside() {
   return (
     <>
     <section className="Top">

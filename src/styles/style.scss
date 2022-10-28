@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+html {
+    @include background;
+    height: 100vh;
+}
