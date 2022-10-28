@@ -5,6 +5,7 @@ import {BsArrowLeft} from 'react-icons/bs'
 import PersonIkon from '../components/PersonIkon';
 import InsertText from '../components/InsertText';
 import Switch from '../components/Switch';
+import AddToDoList from '../components/AddToDoList';
 
 
 export default function NewTask() {
@@ -22,17 +23,14 @@ export default function NewTask() {
         
         
         <div className="ny_opgave">
-            <h1>New task</h1>
-            <form className="Task_name" >
-            <input type="text" />
-            </form>
-          
+            
+          <AddToDoList/>
             <div className="When">
             <InsertText name="When to do it" /> 
             </div>
             </div>
             <div className="hvem">
-            <InsertText name="Who should do it ?" />
+            <InsertText name="Who should do it?" />
             </div>
             <div className="Pr_container">
             <div className="personer">
@@ -45,6 +43,7 @@ export default function NewTask() {
             onToogle={() => setIsToogled(!isToggled)}/>
         </div>
         </section>
+   
         </>
     )
 };

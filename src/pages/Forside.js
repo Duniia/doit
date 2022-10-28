@@ -53,6 +53,7 @@ export default function Forside() {
       <NavLink to="/NewTask"><AddTask />
       </NavLink>
      </section> 
+   
   </>
   );
 }; 
