@@ -7,6 +7,7 @@ import './styles/style.css';
 import './styles/loginregister.css';
 import './styles/nadia.css';
 import './styles/michelle.css';
+import './styles/profile.css'
 import Forside from './pages/Forside'
 import MedlemmerPage from "./pages/medlemmer2";
 import SettingsPage from "./pages/settings2";

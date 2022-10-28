@@ -1,6 +1,5 @@
 //Dunia
 import React from 'react'
-import '../styles/profile.scss'
 import {BsPersonFill} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
 import {IoMdArrowBack} from 'react-icons/io'
@@ -20,7 +19,7 @@ function Profil() {
                 <input type="text" placeholder="Name" className="profiletext" required/>
                 <input type="text" placeholder="Password" className="profiletext" required/>
                 <input type="text" placeholder="E-mail" className="profiletext" required/>
-                <input type="submit" value="Change" id="create" />
+                <NavLink to="/Forside"><input type="submit" value="Change" id="change" /></NavLink>
             </div>
     </section>
     </>

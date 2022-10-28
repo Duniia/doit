@@ -1,5 +1,7 @@
 @import "variables.scss";
 
+//Dunia
+
 .back-profile{
     display: flex;
     justify-content: space-between;
@@ -26,6 +28,7 @@
       
     h1 {
         padding-bottom: 20px;
+        font-family: $font-one;
     }
 
     .profilicon {
@@ -47,6 +50,22 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px;
+            align-items: center;
+
+
+            #change {
+                width: 200px;
+                padding: 15px 30px;
+                border-radius: 25px;
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                color: $font-color-black;
+                background-color: $button-blue;
+                box-shadow: $box-shadow;
+                cursor: pointer;
+                margin-top: 50px;
+            }
     }
     .profiletext {
         width: 250px;
@@ -61,19 +80,6 @@
         cursor: pointer;
     }
 
-    #create {
-        width: 200px;
-        margin: 10px auto;
-        padding: 15px 30px;
-        border-radius: 25px;
-        border: none;
-        font-size: 14px;
-        font-weight: bold;
-        color: $font-color-black;
-        background-color: $button-blue;
-        box-shadow: $box-shadow;
-        cursor: pointer;
-        margin-top: 50px;
-    }
+
 
 }
