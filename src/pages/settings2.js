@@ -72,7 +72,7 @@ export default function SettingsPage() {
     {/*light / dark mode knap/icon*/}
     <div className="ld-container" >
     <p className="ld-tekst">light/dark</p>
-        <MdToggleOff className="switch-ld" style={{overflow:'visible', height:'50px', width:'400px', paddingLeft:'2px'}}/>
+        <MdToggleOff size={35} className="switch-ld" style={{overflow:'visible', height:'50px', width:'400px', paddingLeft:'2px'}}/>
     </div>
           <br></br>
 
