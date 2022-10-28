@@ -12,15 +12,17 @@ function Household() {
   
     return (
       <>
-    
-      <section className='topnav'>
-        <div className="back-btn">
-          <NavLink to="/" end><IoMdArrowBack /></NavLink>
-        </div>
+    <section className="personlighousehold-page">
+    <div className='topnav'>
+      <div className="backbtn">
+        <NavLink to="/Forside"><IoMdArrowBack /></NavLink>
+      </div>
         <PersonalOrHouseBtn/>
-        </section>
-        <h1>My Household Tasks</h1>
-        <section className="box1">
+        
+      </div>
+
+      <h1>My Household Tasks</h1>
+      <section className="box1">
           <Overskrift name="Your daily task"/>
         <div className="Container1">
          <div className="Opgave11">
@@ -43,7 +45,7 @@ function Household() {
      </div>   
      </section>
 
-    <section className="box1">
+     <section className="box1">
           <Overskrift name="Your weekly task"/>
         <div className="Container1">
          <div className="Opgave11">
@@ -64,6 +66,7 @@ function Household() {
      <div className="expand">
      <CgArrowsExpandRight/>
      </div>
+   </section>
    </section>
     </>
   )

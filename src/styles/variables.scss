@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap');
 
+html {
+    height: 100vh;
+    @include background;
+}
 // fonts
 $font-one: 'Fuzzy Bubbles', cursive;
 $font-two: 'Nunito', sans-serif;
@@ -13,6 +17,7 @@ $font-color-white: #f1f1f1;
 @mixin background {
     background: rgb(255,222,203);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background: linear-gradient(180deg, 
         rgba(255,222,203,0.6954131994594712) 0%, 
         rgba(255,219,199,0.7962535355939251) 45%, 

@@ -3,6 +3,10 @@
 /* ------- MEDLEMMER SIDE ------- */
 /* intro/header */
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+html {
+  height: 100vh;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -17,11 +21,6 @@ a:hover {
 
 a:active {
   text-decoration: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 .medlemmertest {
@@ -101,59 +100,48 @@ a:active {
 
 /* tilføj medlem knap */
 .add-container2 {
-  text-align: center;
-  padding-left: 20px;
-}
-
-.add1-knap {
-  width: 52vh;
-  height: 8vh;
-  border-radius: 10vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 250px;
   border-radius: 25px;
-  border: none;
   font-size: 14px;
   font-weight: bold;
   color: #181818;
   background-color: rgba(123, 194, 209, 0.6);
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
-  margin-bottom: 30px;
+  /* tilføj plus ikon */
+}
+.add-container2 .add1-knap {
+  margin: 0;
+}
+.add-container2 .icon5 {
+  cursor: pointer;
 }
 
 .add1-knap:hover {
   background-color: #fcfcfc;
 }
 
-/* tilføj plus ikon */
-.icon5 {
-  position: relative;
-  right: 7vh;
-  top: 0.8vh;
-  cursor: pointer;
-}
-
-.icon5:hover {
-  color: #f1f1f1;
-}
-
 /* ------- SETTINGS SIDE ------- */
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .settingsmain {
   padding-top: 5px;
+  margin-bottom: 100px !important;
+  /* Clear floats after the columns - header content */
+  /*settings header content */
+  /* vælg tema tekst */
+  /* LIGHT/DARK MODE icon */
+  /*change background knap*/
 }
-
-.settings {
+.settingsmain .settings {
   width: 100%;
+  /*intro*/
 }
-
-/*intro*/
-.settings .settings-header {
+.settingsmain .settings .settings-header {
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 38px;
   text-align: center;
@@ -161,23 +149,18 @@ a:active {
   color: #181818;
   margin-top: 20px;
 }
-
-/*settings header content */
-.column-settings {
-  float: left;
-  width: 50%;
-  text-align: center;
-}
-
-/* Clear floats after the columns - header content */
-.row-settings:after {
+.settingsmain .row-settings:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/* log ud knap */
-.button-log {
+.settingsmain .column-settings {
+  float: left;
+  width: 50%;
+  text-align: center;
+  /* log ud knap */
+}
+.settingsmain .column-settings .button-log {
   background-color: rgba(123, 194, 209, 0.6);
   color: #181818;
   padding: 6px 18px;
@@ -187,13 +170,14 @@ a:active {
   border-radius: 25px;
   font-size: 14px;
 }
-
-.button-log:hover {
-  background-color: #60949e;
+.settingsmain .settingboks-container {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* settings info(bokse)  */
 }
-
-/* settings info(bokse)  */
-.settingboks {
+.settingsmain .settingboks-container .settingboks {
   width: 45vh;
   height: 8vh;
   border-radius: 10vh;
@@ -207,49 +191,33 @@ a:active {
   color: #181818;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
 }
-
-.settingboks:hover {
-  background-color: rgba(123, 194, 209, 0.6);
-}
-
-.settingboks-container {
-  margin-top: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.settings-btn-text {
+.settingsmain .settingboks-container .settingboks .settings-btn-text {
   padding-top: 2vh;
 }
-
-/* vælg tema tekst */
-.theme-text {
+.settingsmain .theme-text {
   align-items: center;
   justify-content: center;
   display: flex;
   padding-bottom: 8px;
 }
-
-/* LIGHT/DARK MODE icon */
-.ld-container {
+.settingsmain .ld-container {
   text-align: center;
 }
-
-.switch-ld {
+.settingsmain .ld-container .ld-tekst {
+  font-size: 13px;
+  font-weight: bold;
+}
+.settingsmain .ld-container .switch-ld {
   padding: 6px 18px;
   text-align: center;
   justify-content: center;
   cursor: pointer;
 }
-
-.ld-tekst {
-  font-size: 13px;
-  font-weight: bold;
+.settingsmain .buttonbackgroundcontainer {
+  text-align: center;
+  justify-content: center;
 }
-
-/*change background knap*/
-.buttonbackground {
+.settingsmain .buttonbackgroundcontainer .buttonbackground {
   background-color: rgba(123, 194, 209, 0.6);
   color: #181818;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
@@ -263,18 +231,8 @@ a:active {
   padding-left: 7vh;
   font-size: 14px;
 }
-
-.btn-knaptekst {
+.settingsmain .buttonbackgroundcontainer .buttonbackground .btn-knaptekst {
   text-align: left;
   padding-top: 2vh;
   padding-left: 5vh;
-}
-
-.buttonbackground:hover {
-  background-color: #fcfcfc;
-}
-
-.buttonbackgroundcontainer {
-  text-align: center;
-  justify-content: center;
 }/*# sourceMappingURL=nadia.css.map */
