@@ -6,34 +6,32 @@
 .Btn {
     height: 25px; 
     width: 50px;
-    background: #FCAD94;
+    background: $button-orange;
     border: none; 
     border-radius: 25px;
     position: relative;
     right: 15px;  
- }
+}
 
 //  Styling til addTask componenten
 
 .New {
     height: 40px; 
     width: 275px; 
-    background: #F9F9F9; 
+    background: $white; 
     border-radius: 15px; 
-    filter: drop-shadow(0px 4px 4px #edebeb);
+    box-shadow: $box-shadow;
     font-size: 12px; 
     display: flex; 
     justify-content: space-between;
     align-items: center; 
     cursor: pointer;
     color: black; 
+
+    h2 {
+      position: inherit;
+    }
 } 
-
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
-
 
 .plus {
     height: 35px; 
@@ -53,69 +51,73 @@ a:active {text-decoration: none;}
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
+
+    h1 {
+        font-family: $font-two;
+        font-size: 25px;   
+        position: relative;
+        top: 8px; 
+        left:10px;
+      }
     }
     
-    h1 {
-      font-family: 'Fuzzy Bubbles' 'Sans serif';
-      font-size: 25px; 
-      font-weight: lighter;   
-      position: relative;
-      top: 8px; 
-      left:10px;
-    }
+  
     
     .box {
       height: 275px; 
       display: flex;
       align-items: flex-end;
+
+      .Container {
+        height: 235px; 
+        width: 310px;
+        border-radius: 30px; 
+        background: $white;
+        box-shadow: $box-shadow;
+        margin: 10px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+      }
+
+      
+       .opgave_container {
+        height: 45px; 
+        width: 271px; 
+        background: $white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+  
+        
+      }
+      .Opgave1{
+        position: relative;
+        bottom: 15px; 
+        left: 10px; 
+      }
+
+      
+     .Opgave_container2 {
+        height: 45px; 
+        width: 271px; 
+        background: $white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .Opgave2{
+        position: relative;
+        bottom: 30px; 
+        left: 10px; 
+      }
+      
     }
-    
-    .Container {
-      height: 235px; 
-      width: 310px;
-      border-radius: 30px; 
-      background: #F9F9F9;
-      filter: drop-shadow(0px 4px 4px #edebeb);
-      margin: 10px; 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-between;
-    }
-    
-    .opgave_container {
-      height: 45px; 
-      width: 271px; 
-      background: white;
-      border-radius: 15px;
-      filter: drop-shadow(0px 4px 4px #edebeb);
-      display: flex; 
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .Opgave1{
-      position: relative;
-      bottom: 15px; 
-      left: 10px; 
-    }
-    
-    .Opgave_container2 {
-      height: 45px; 
-      width: 271px; 
-      background: white;
-      border-radius: 15px;
-      filter: drop-shadow(0px 4px 4px #edebeb);
-      display: flex; 
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .Opgave2{
-      position: relative;
-      bottom: 30px; 
-      left: 10px; 
-    }
-    
     
     .List_container{
       height: 125px; 
@@ -133,9 +135,6 @@ a:active {text-decoration: none;}
       
     }
 
-    .NavLink {
-      text-decoration: none; 
-    } 
 
     // Styling af text componenten til newtask siden (props) 
 
@@ -152,8 +151,8 @@ a:active {text-decoration: none;}
         height: 125px;
         width: 125px; 
         border-radius: 15px;
-        filter: drop-shadow(0px 4px 4px #edebeb);
-        background: #F9F9F9;
+        box-shadow: $box-shadow;
+        background: $white;
         display: flex; 
         flex-direction: column;
         justify-content: space-around;
@@ -163,8 +162,8 @@ a:active {text-decoration: none;}
         height: 125px;
         width: 125px; 
         border-radius: 15px;
-        filter: drop-shadow(0px 4px 4px #edebeb);
-        background: #F9F9F9;
+        box-shadow: $box-shadow;
+        background: $white;
         display: flex; 
         flex-direction: column;
         justify-content: space-around;
@@ -175,6 +174,7 @@ a:active {text-decoration: none;}
        justify-content: flex-end;
        position: relative;
        right: 15px; 
+     
       }
 
     //   styling til newtask siden 
@@ -195,8 +195,8 @@ a:active {text-decoration: none;}
     .tilbage_pil {
         height: 35px;
         width: 35px; 
-        background: white;
-        filter: drop-shadow(0px 4px 4px #edebeb);
+        background: $white;
+        box-shadow: $box-shadow;
         border-radius: 50%;
         font-size: 25px;
         display: flex;
@@ -218,18 +218,18 @@ a:active {text-decoration: none;}
     .Task_name {
         height: 60px;
         width: 271px;
-        background: white; 
+        background: $white; 
         border-radius: 15px;
-        filter: drop-shadow(0px 4px 4px #edebeb);
+        box-shadow: $box-shadow;
         cursor: pointer;
     }
     
     .When {
         height: 60px;
         width: 271px;
-        background: white; 
+        background: $white; 
         border-radius: 15px; 
-        filter: drop-shadow(0px 4px 4px #edebeb);
+        box-shadow: $box-shadow;
         cursor: pointer; 
         position: relative; 
         top: 10px; 
@@ -248,6 +248,7 @@ a:active {text-decoration: none;}
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+     
     }
     
     .personer {
@@ -256,7 +257,6 @@ a:active {text-decoration: none;}
         display: flex;
         justify-content:space-around;
         align-items: center;
-        filter: drop-shadow(0px 4px 4px #edebeb);
         cursor: pointer;
     }
     
@@ -265,25 +265,30 @@ a:active {text-decoration: none;}
         width: 75px;
         border-radius: 15px;
         border-style: none;
-        background-color: #7BC2D1;
-        filter: drop-shadow(0px 4px 4px #edebeb);
+        background-color: $button-blue;
+        box-shadow: $box-shadow;
         cursor: pointer;
     }
 
     // styling til overskriften componenten på forsiden (props) 
 
-    h2 {
-        position: relative; 
-        top: 10px; 
-        left: 10px; 
-    }  
+
+    .overskrift {
+        h2 {
+            position: relative; 
+            top: 10px; 
+            left: 10px; 
+        } 
+    }
+  
 
     // styling til personIkon componenten 
     .ikon {
         height: 35px; 
         width: 35px;
         border-radius: 50%;
-        background: white; 
+        background: $white; 
+        box-shadow: $box-shadow;
         position: relative;
         right: 10px; 
         font-size: 28px;
@@ -324,14 +329,14 @@ a:active {text-decoration: none;}
             width: 26px;
             left: 4px;
             bottom: 4px; 
-            background: white; 
+            background: $white; 
             transition: 0.4s;
         }
         
         
         input:checked + .slider {
-            background: #7BC2D1;
-            filter: drop-shadow(0px 4px 4px #edebeb);;
+            background: $button-blue;
+            box-shadow: $box-shadow;
         }
         
         input:checked + .slider:before {

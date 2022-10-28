@@ -19,7 +19,7 @@ a:active {
 .Btn {
   height: 25px;
   width: 50px;
-  background: #FCAD94;
+  background: #FFA876;
   border: none;
   border-radius: 25px;
   position: relative;
@@ -29,9 +29,9 @@ a:active {
 .New {
   height: 40px;
   width: 275px;
-  background: #F9F9F9;
+  background: #fcfcfc;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -39,21 +39,8 @@ a:active {
   cursor: pointer;
   color: black;
 }
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
+.New h2 {
+  position: inherit;
 }
 
 .plus {
@@ -73,11 +60,9 @@ a:active {
   justify-content: space-between;
   align-items: center;
 }
-
-h1 {
-  font-family: "Fuzzy Bubbles" "Sans serif";
+.Top h1 {
+  font-family: "Nunito", sans-serif;
   font-size: 25px;
-  font-weight: lighter;
   position: relative;
   top: 8px;
   left: 10px;
@@ -88,48 +73,43 @@ h1 {
   display: flex;
   align-items: flex-end;
 }
-
-.Container {
+.box .Container {
   height: 235px;
   width: 310px;
   border-radius: 30px;
-  background: #F9F9F9;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.opgave_container {
+.box .opgave_container {
   height: 45px;
   width: 271px;
-  background: white;
+  background: #fcfcfc;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.Opgave1 {
+.box .Opgave1 {
   position: relative;
   bottom: 15px;
   left: 10px;
 }
-
-.Opgave_container2 {
+.box .Opgave_container2 {
   height: 45px;
   width: 271px;
-  background: white;
+  background: #fcfcfc;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.Opgave2 {
+.box .Opgave2 {
   position: relative;
   bottom: 30px;
   left: 10px;
@@ -150,10 +130,6 @@ h1 {
   justify-content: center;
 }
 
-.NavLink {
-  text-decoration: none;
-}
-
 .Insert_text {
   position: relative;
   left: 10px;
@@ -164,8 +140,8 @@ h1 {
   height: 125px;
   width: 125px;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
-  background: #F9F9F9;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  background: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -175,8 +151,8 @@ h1 {
   height: 125px;
   width: 125px;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
-  background: #F9F9F9;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  background: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -205,8 +181,8 @@ h1 {
 .tilbage_pil {
   height: 35px;
   width: 35px;
-  background: white;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   border-radius: 50%;
   font-size: 25px;
   display: flex;
@@ -228,18 +204,18 @@ h1 {
 .Task_name {
   height: 60px;
   width: 271px;
-  background: white;
+  background: #fcfcfc;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
 }
 
 .When {
   height: 60px;
   width: 271px;
-  background: white;
+  background: #fcfcfc;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
   position: relative;
   top: 10px;
@@ -266,7 +242,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  filter: drop-shadow(0px 4px 4px #edebeb);
   cursor: pointer;
 }
 
@@ -275,12 +250,12 @@ h1 {
   width: 75px;
   border-radius: 15px;
   border-style: none;
-  background-color: #7BC2D1;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  background-color: rgba(123, 194, 209, 0.6);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
 }
 
-h2 {
+.overskrift h2 {
   position: relative;
   top: 10px;
   left: 10px;
@@ -290,7 +265,8 @@ h2 {
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  background: white;
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   position: relative;
   right: 10px;
   font-size: 28px;
@@ -330,13 +306,13 @@ h2 {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background: white;
+  background: #fcfcfc;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background: #7BC2D1;
-  filter: drop-shadow(0px 4px 4px #edebeb);
+  background: rgba(123, 194, 209, 0.6);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
 }
 
 input:checked + .slider:before {

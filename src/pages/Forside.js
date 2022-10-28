@@ -50,9 +50,9 @@ export default function Forside() {
      </section>
 
      <section className="addnew">
-     <NavLink to="/NewTask"><AddTask />
+      <NavLink to="/NewTask"><AddTask />
       </NavLink>
-     </section>
+     </section> 
   </>
   );
 }; 
