@@ -1,7 +1,5 @@
+// Dunia
 import React from 'react';
-import { useState } from 'react';
-import ToDoItems from '../components/ToDoItems';
-import ToDoForm from '../components/ToDoForm';
 import Button from '../components/Button';
 import Overskrift from '../components/Overskrift';
 import OpgaveTitle from '../components/OpgaveTitle';
@@ -11,18 +9,7 @@ import { NavLink } from "react-router-dom";
 import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
 
 function Household() {
-    const [todos, setTodos] = useState([]);
-
-    const addTodo = (text) => {
-      let id = 1;
-      if(todos.length > 0) {
-        id = todos[0].id + 1
-      }
-      let todo = {id: id, text: text, comleted: false}
-      let newTodos = [todo, ...todos]
-      console.log(newTodos)
-      setTodos(newTodos)
-    };
+  
     return (
       <>
     
@@ -33,9 +20,7 @@ function Household() {
         <PersonalOrHouseBtn/>
         </section>
         <h1>My Household Tasks</h1>
-        <div className='todo-app'>
-      {/* Add for each to do into component (todoitems) */}
-      <section className="box1">
+        <section className="box1">
           <Overskrift name="Your daily task"/>
         <div className="Container1">
          <div className="Opgave11">
@@ -55,14 +40,9 @@ function Household() {
      </div>
      <div className="expand">
      <CgArrowsExpandRight/>
-     </div>   </section>
-      {todos.map((todo) => {
-        return (
-          <ToDoItems todo={todo}/>
-        )
-      })}
-    </div>
-    <div className='todo-app'>
+     </div>   
+     </section>
+
     <section className="box1">
           <Overskrift name="Your weekly task"/>
         <div className="Container1">
@@ -85,8 +65,6 @@ function Household() {
      <CgArrowsExpandRight/>
      </div>
    </section>
-    </div>
-    <ToDoForm addTodo={addTodo}/>
     </>
   )
 }

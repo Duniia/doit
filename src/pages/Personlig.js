@@ -1,8 +1,5 @@
 // Kodet af Dunia
 import React from 'react';
-import { useState } from 'react';
-import ToDoItems from '../components/ToDoItems';
-import ToDoForm from '../components/ToDoForm';
 import Button from '../components/Button';
 import Overskrift from '../components/Overskrift';
 import OpgaveTitle from '../components/OpgaveTitle';
@@ -13,22 +10,8 @@ import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
 
 function Personlig() {
 
-
-  const [todos, setTodos] = useState([]);
-
-  const addTodo = (text) => {
-    let id = 1;
-    if(todos.length > 0) {
-      id = todos[0].id + 1
-    }
-    let todo = {id: id, text: text, comleted: false}
-    let newTodos = [todo, ...todos]
-    console.log(newTodos)
-    setTodos(newTodos)
-  };
   return (
     <>
-  
     <section className='topnav'>
       <div className="back-btn">
         <NavLink to="/" end><IoMdArrowBack /></NavLink>
@@ -37,8 +20,6 @@ function Personlig() {
       </section>
 
       <h1>My Personal Tasks</h1>
-    <div className='todo-app'>
-      {/* Add for each to do into component (todoitems) */}
       <section className="box1">
           <Overskrift name="Your daily task"/>
         <div className="Container1">
@@ -59,15 +40,10 @@ function Personlig() {
      </div>
      <div className="expand">
      <CgArrowsExpandRight/>
-     </div>   </section>
-      {todos.map((todo) => {
-        return (
-          <ToDoItems todo={todo}/>
-        )
-      })}
-    </div>
-    <div className='todo-app'>
-    <section className="box1">
+     </div>   
+     </section>
+
+     <section className="box1">
           <Overskrift name="Your weekly task"/>
         <div className="Container1">
          <div className="Opgave11">
@@ -89,8 +65,6 @@ function Personlig() {
      <CgArrowsExpandRight/>
      </div>
    </section>
-    </div>
-    {/* <ToDoForm addTodo={addTodo}/> */}
     </>
   )
 }
