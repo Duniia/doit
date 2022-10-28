@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { AiOutlineUser } from "react-icons/ai";
-import { FaToggleOn } from "react-icons/fa";
+import { BsToggleOff } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 //  Nadia
 
@@ -70,7 +70,7 @@ export default function SettingsPage() {
           {/*light / dark mode knap/icon*/}
           <div className="ld-container">
           <p className="ld-tekst">light/dark</p>
-              <FaToggleOn size={35} className="switch-ld"/>
+              <BsToggleOff size={35} className="switch-ld"/>
           </div>
           <br></br>
           {/*change background knap*/}
