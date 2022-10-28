@@ -13,7 +13,7 @@ function Personlig() {
   return (
     <>
     <section className='topnav'>
-      <div className="back-btn">
+      <div className="backbtn">
         <NavLink to="/Forside"><IoMdArrowBack /></NavLink>
       </div>
         <PersonalOrHouseBtn/>
