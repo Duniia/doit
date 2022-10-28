@@ -1,0 +1,115 @@
+@import "variables.scss";
+
+.signInPage, .registerPage {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .signIn-greeting, .register-greeting {
+        font-family: $font-two;
+        text-align: center;
+        font-size: 24px;  
+        width: 240px;
+        margin: 0 auto;
+        color: $font-color-black; 
+    }
+
+    .signIn-header, .register-header {
+        font-family: $font-one;
+        font-size: 58px;
+        text-align: center;
+        width: 100%;
+        color: $font-color-black;
+        margin: 0;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    .signIn-from, .register-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .signIn, .register {
+            width: 250px;
+            margin: 5px auto;
+            padding: 15px 30px;
+            color: gray;
+            // text-align: center;
+            border-radius: 25px;
+            border: none;
+            font-size: 14px;
+            box-shadow: $box-shadow;
+            cursor: pointer;
+        }
+
+        #forgortPassword {
+            text-align: end;
+            width: 310px;
+            margin: 0 auto;
+            text-decoration: none;
+            font-family: $font-two;
+            color: $font-color-gray;
+            cursor: pointer;
+        }
+
+        #signIn, #create {
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: $font-color-black;
+            background-color: $button-blue;
+            box-shadow: $box-shadow;
+            cursor: pointer;
+        }
+    }
+
+    .signIn-RegisterBtn {
+        position: relative;
+        margin: 20px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: $font-two;
+        cursor: pointer;
+
+        .signIn-RegisterBtn-container {
+            background-color: $button-orange;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            display: flex;
+            box-shadow: $box-shadow;
+
+            #signInOrRegisterBtn {
+                width: 100px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                text-decoration: none;
+                color: black;
+            }
+
+            .active {
+                border-radius: 25px;
+                background-color: $white;
+            }
+
+            .inactive {
+                background-color:transparent;
+            }
+        }
+    }
+}

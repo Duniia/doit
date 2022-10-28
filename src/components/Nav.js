@@ -7,7 +7,7 @@ import {FiUsers, FiSettings} from 'react-icons/fi'
 function Nav() {
   return (
     <nav className="navbar">
-    <NavLink to="/" end><AiOutlineHome /></NavLink>
+    <NavLink to="/forside" end><AiOutlineHome /></NavLink>
     <NavLink to="/personlig"><AiOutlineUser /></NavLink>
     <NavLink to="/medlemmer"><FiUsers /></NavLink>
     <NavLink to="/settings"><FiSettings/></NavLink>

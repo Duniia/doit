@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+.signInPage, .registerPage {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.signInPage .signIn-greeting, .signInPage .register-greeting, .registerPage .signIn-greeting, .registerPage .register-greeting {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  width: 240px;
+  margin: 0 auto;
+  color: #181818;
+}
+.signInPage .signIn-header, .signInPage .register-header, .registerPage .signIn-header, .registerPage .register-header {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 58px;
+  text-align: center;
+  width: 100%;
+  color: #181818;
+  margin: 0;
+}
+.signInPage p, .registerPage p {
+  margin-top: 15px;
+}
+.signInPage .signIn-from, .signInPage .register-form, .registerPage .signIn-from, .registerPage .register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signInPage .signIn-from .signIn, .signInPage .signIn-from .register, .signInPage .register-form .signIn, .signInPage .register-form .register, .registerPage .signIn-from .signIn, .registerPage .signIn-from .register, .registerPage .register-form .signIn, .registerPage .register-form .register {
+  width: 250px;
+  margin: 5px auto;
+  padding: 15px 30px;
+  color: gray;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.signInPage .signIn-from #forgortPassword, .signInPage .register-form #forgortPassword, .registerPage .signIn-from #forgortPassword, .registerPage .register-form #forgortPassword {
+  text-align: end;
+  width: 310px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: #555555;
+  cursor: pointer;
+}
+.signInPage .signIn-from #signIn, .signInPage .signIn-from #create, .signInPage .register-form #signIn, .signInPage .register-form #create, .registerPage .signIn-from #signIn, .registerPage .signIn-from #create, .registerPage .register-form #signIn, .registerPage .register-form #create {
+  width: 200px;
+  margin: 10px auto;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #181818;
+  background-color: rgba(123, 194, 209, 0.6);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.signInPage .signIn-RegisterBtn, .registerPage .signIn-RegisterBtn {
+  position: relative;
+  margin: 20px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+.signInPage .signIn-RegisterBtn .signIn-RegisterBtn-container, .registerPage .signIn-RegisterBtn .signIn-RegisterBtn-container {
+  background-color: #FFA876;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+}
+.signInPage .signIn-RegisterBtn .signIn-RegisterBtn-container #signInOrRegisterBtn, .registerPage .signIn-RegisterBtn .signIn-RegisterBtn-container #signInOrRegisterBtn {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+.signInPage .signIn-RegisterBtn .signIn-RegisterBtn-container .active, .registerPage .signIn-RegisterBtn .signIn-RegisterBtn-container .active {
+  border-radius: 25px;
+  background-color: #fcfcfc;
+}
+.signInPage .signIn-RegisterBtn .signIn-RegisterBtn-container .inactive, .registerPage .signIn-RegisterBtn .signIn-RegisterBtn-container .inactive {
+  background-color: transparent;
+}/*# sourceMappingURL=loginregister.css.map */
