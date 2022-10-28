@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { AiOutlineUser } from "react-icons/ai";
+import {BsPersonFill} from 'react-icons/bs'
 import { BsToggleOn } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 //  Nadia
@@ -29,7 +29,7 @@ export default function SettingsPage() {
         <div className="row-settings">
           <div className="column-settings">
             {" "}
-            <AiOutlineUser size={30} />
+            <BsPersonFill className="profilsettingsicon" size={30} />
             Name
           </div>
           <div className="column-settings">

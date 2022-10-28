@@ -144,6 +144,15 @@
     width: 50%;
     text-align: center;
 
+    /*profil icon */
+    .profilsettingsicon {
+      padding: 10px;
+      background: $white;
+      box-shadow: $box-shadow;
+      border-radius: 70px;
+      margin-bottom: 2px;
+      }
+
     /* log ud knap */
     .button-log {
       background-color: $button-blue;
@@ -154,6 +163,7 @@
       display: inline-block;
       border-radius: 25px;
       font-size: 14px;
+      margin-top: 16px;
     }
   }
 
