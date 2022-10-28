@@ -12,6 +12,7 @@ $font-color-white: #f1f1f1;
 // background gradient - @mixin
 @mixin background {
     background: rgb(255,222,203);
+    background-repeat: no-repeat;
     background: linear-gradient(180deg, 
         rgba(255,222,203,0.6954131994594712) 0%, 
         rgba(255,219,199,0.7962535355939251) 45%, 
