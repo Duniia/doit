@@ -1,4 +1,3 @@
-// Kodet af Dunia
 import React from 'react';
 import { useState } from 'react';
 import '../styles/personlig.scss'
@@ -12,33 +11,30 @@ import {IoMdArrowBack} from 'react-icons/io'
 import { NavLink } from "react-router-dom";
 import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
 
-function Personlig() {
+function Household() {
+    const [todos, setTodos] = useState([]);
 
-
-  const [todos, setTodos] = useState([]);
-
-  const addTodo = (text) => {
-    let id = 1;
-    if(todos.length > 0) {
-      id = todos[0].id + 1
-    }
-    let todo = {id: id, text: text, comleted: false}
-    let newTodos = [todo, ...todos]
-    console.log(newTodos)
-    setTodos(newTodos)
-  };
-  return (
-    <>
-  
-    <section className='topnav'>
-      <div className="back-btn">
-        <NavLink to="/" end><IoMdArrowBack /></NavLink>
-      </div>
+    const addTodo = (text) => {
+      let id = 1;
+      if(todos.length > 0) {
+        id = todos[0].id + 1
+      }
+      let todo = {id: id, text: text, comleted: false}
+      let newTodos = [todo, ...todos]
+      console.log(newTodos)
+      setTodos(newTodos)
+    };
+    return (
+      <>
+    
+      <section className='topnav'>
+        <div className="back-btn">
+          <NavLink to="/" end><IoMdArrowBack /></NavLink>
+        </div>
         <PersonalOrHouseBtn/>
-      </section>
-
-      <h1>My Personal Tasks</h1>
-    <div className='todo-app'>
+        </section>
+        <h1>My Household Tasks</h1>
+        <div className='todo-app'>
       {/* Add for each to do into component (todoitems) */}
       <section className="box1">
           <Overskrift name="Your daily task"/>
@@ -95,5 +91,4 @@ function Personlig() {
     </>
   )
 }
-
-export default Personlig
+export default Household;
