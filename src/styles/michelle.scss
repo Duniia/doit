@@ -27,6 +27,10 @@
     align-items: center; 
     cursor: pointer;
     color: black; 
+
+    h2 {
+      position: inherit;
+    }
 } 
 
 a:link {text-decoration: none;}

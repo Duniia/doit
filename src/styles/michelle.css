@@ -39,6 +39,9 @@ a:active {
   cursor: pointer;
   color: black;
 }
+.New h2 {
+  position: inherit;
+}
 
 a:link {
   text-decoration: none;
