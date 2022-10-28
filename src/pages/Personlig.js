@@ -12,12 +12,14 @@ function Personlig() {
 
   return (
     <>
-    <section className='topnav'>
-      <div className="back-btn">
+    <section className="personlighousehold-page">
+    <div className='topnav'>
+      <div className="backbtn">
         <NavLink to="/Forside"><IoMdArrowBack /></NavLink>
       </div>
         <PersonalOrHouseBtn/>
-      </section>
+        
+      </div>
 
       <h1>My Personal Tasks</h1>
       <section className="box1">
@@ -64,6 +66,7 @@ function Personlig() {
      <div className="expand">
      <CgArrowsExpandRight/>
      </div>
+   </section>
    </section>
     </>
   )
