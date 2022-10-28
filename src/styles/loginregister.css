@@ -57,6 +57,8 @@ a:active {
   font-size: 14px;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 .signInPage .signIn-from #forgortPassword, .signInPage .register-form #forgortPassword, .registerPage .signIn-from #forgortPassword, .registerPage .register-form #forgortPassword {
   text-align: end;
