@@ -4,10 +4,10 @@
 /* intro/header */
 @import "variables.scss";
 
-* {
-  padding: 0;
-  margin: 0;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+// }
 
 .medlemmertest {
     height: 100vh;
@@ -87,179 +87,157 @@
 
 /* tilføj medlem knap */
 .add-container2 {
-  text-align: center;
-  padding-left: 20px;
-}
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $font-color-black;
+    background-color: $button-blue;
+    cursor: pointer;
+    box-shadow: $box-shadow;
 
-.add1-knap {
-  width: 52vh;
-  height: 8vh;
-  border-radius: 10vh;
-  border-radius: 25px;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: $font-color-black;
-  background-color: $button-blue;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: $box-shadow;
-  margin-bottom: 30px;
+    .add1-knap {
+        margin: 0;
+    }
+    
+    /* tilføj plus ikon */
+    .icon5 {
+        cursor: pointer;
+    }
 }
 
 .add1-knap:hover {
   background-color: $white;
 }
 
-/* tilføj plus ikon */
-.icon5 {
-  position: relative;
-  right: 7vh;
-  top: 0.8vh;
-  cursor: pointer;
-}
-
-.icon5:hover {
-  color: $font-color-white;
-}
-
 /* ------- SETTINGS SIDE ------- */
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .settingsmain {
   padding-top: 5px;
-}
-.settings {
-  width: 100%;
-}
+  margin-bottom: 100px !important;
 
-/*intro*/
-.settings .settings-header {
-  font-family: $font-one;
-  font-size: 38px;
-  text-align: center;
-  width: 100%;
-  color: $font-color-black;
-  margin-top: 20px;
-}
+  .settings {
+    width: 100%;
 
-/*settings header content */
-.column-settings {
-  float: left;
-  width: 50%;
-  text-align: center;
-}
+    /*intro*/
+    .settings-header {
+        font-family: $font-one;
+        font-size: 38px;
+        text-align: center;
+        width: 100%;
+        color: $font-color-black;
+        margin-top: 20px;
+        }
+    }
 
-/* Clear floats after the columns - header content */
-.row-settings:after {
-  content: '';
-  display: table;
-  clear: both;
-}
+    /* Clear floats after the columns - header content */
+    .row-settings:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 
-/* log ud knap */
-.button-log {
-  background-color: $button-blue;
-  color: $font-color-black;
-  padding: 6px 18px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 25px;
-  font-size: 14px;
-}
+    /*settings header content */
+    .column-settings {
+        float: left;
+        width: 50%;
+        text-align: center;
 
-.button-log:hover {
-  background-color: #60949e;
-}
+        /* log ud knap */
+        .button-log {
+            background-color: $button-blue;
+            color: $font-color-black;
+            padding: 6px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+    }
 
-/* settings info(bokse)  */
-.settingboks {
-  width: 45vh;
-  height: 8vh;
-  border-radius: 10vh;
-  padding-left: 7vh;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: $white;
-  color: $font-color-black;
-  box-shadow: $box-shadow;
-}
+    .settingboks-container {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* settings info(bokse)  */
+        .settingboks {
+            width: 45vh;
+            height: 8vh;
+            border-radius: 10vh;
+            padding-left: 7vh;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: $white;
+            color: $font-color-black;
+            box-shadow: $box-shadow;
+    
+            .settings-btn-text {
+                padding-top: 2vh;
+            }
+        }
+    }
 
-.settingboks:hover {
-  background-color: $button-blue;
-}
-.settingboks-container {
-  margin-top: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.settings-btn-text {
-  padding-top: 2vh;
-}
+    /* vælg tema tekst */
+    .theme-text {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 8px;
+    }
 
-/* vælg tema tekst */
-.theme-text {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 8px;
-}
+    /* LIGHT/DARK MODE icon */
+    .ld-container {
+        text-align: center;
+    
+        .ld-tekst {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    
+        .switch-ld {
+            padding: 6px 18px;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
 
-/* LIGHT/DARK MODE icon */
-.ld-container {
-  text-align: center;
-}
-
-.switch-ld {
-  padding: 6px 18px;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.ld-tekst {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-/*change background knap*/
-.buttonbackground {
-  background-color: $button-blue;
-  color: $font-color-black;
-  box-shadow: $box-shadow;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 25px;
-  width: 45vh;
-  height: 8vh;
-  border-radius: 10vh;
-  padding-left: 7vh;
-  font-size: 14px;
-}
-
-.btn-knaptekst {
-  text-align: left;
-  padding-top: 2vh;
-  padding-left: 5vh;
-}
-
-.buttonbackground:hover {
-  background-color: $white;
-}
-
-.buttonbackgroundcontainer {
-  text-align: center;
-  justify-content: center;
+    /*change background knap*/
+    .buttonbackgroundcontainer {
+        text-align: center;
+        justify-content: center;
+    
+        .buttonbackground {
+            background-color: $button-blue;
+            color: $font-color-black;
+            box-shadow: $box-shadow;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 25px;
+            width: 45vh;
+            height: 8vh;
+            border-radius: 10vh;
+            padding-left: 7vh;
+            font-size: 14px;
+    
+            .btn-knaptekst {
+                text-align: left;
+                padding-top: 2vh;
+                padding-left: 5vh;
+            }
+        }
+    }
 }

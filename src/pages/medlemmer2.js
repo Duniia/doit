@@ -62,7 +62,7 @@ export default function MedlemmerPage() {
           <br></br>
           {/*tilføj ny medlem knap - fiks længde og ikon(responsiv)*/}
           <div className="add-container2">
-            <input type="submit" value="Add new member" className="add1-knap" />
+            <p className="add1-knap">Add new Member</p>
             <GrAdd className="icon5" />
           </div>
         </div>
