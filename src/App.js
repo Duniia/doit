@@ -5,6 +5,7 @@ import './styles/personlig.css';
 import './styles/variables.css';
 import './styles/style.css';
 import './styles/loginregister.css';
+import './styles/michelle.css';
 import Forside from './pages/Forside'
 import MedlemmerPage from "./pages/MedlemmerPage";
 import SettingsPage from "./pages/SettingsPage";

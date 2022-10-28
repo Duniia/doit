@@ -1,7 +1,6 @@
 // Kodet af Michelle 
 
 import React from "react";
-import '../styles/Lists.css';
 import {BsArrowsAngleExpand} from 'react-icons/bs'; 
 
 
