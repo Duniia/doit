@@ -1,1 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");/*# sourceMappingURL=variables.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}/*# sourceMappingURL=variables.css.map */

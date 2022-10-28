@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 html {
   background: rgb(255, 222, 203);
   background: linear-gradient(180deg, rgba(255, 222, 203, 0.6954131995) 0%, rgba(255, 219, 199, 0.7962535356) 45%, rgba(114, 230, 255, 0.1632003143) 90%);
