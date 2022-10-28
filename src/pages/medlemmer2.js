@@ -54,7 +54,7 @@ export default function MedlemmerPage() {
           <br></br>
           {/*scroll ned knap*/}
           <div className="scroll-container">
-            <a href="/#">
+            <a href="#">
               {" "}
               <AiFillDownCircle className="scroll-icon" size={40} />
             </a>
