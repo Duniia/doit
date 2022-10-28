@@ -17,6 +17,7 @@ a:active {
 
 html {
   background: rgb(255, 222, 203);
+  background-repeat: no-repeat;
   background: linear-gradient(180deg, rgba(255, 222, 203, 0.6954131995) 0%, rgba(255, 219, 199, 0.7962535356) 45%, rgba(114, 230, 255, 0.1632003143) 90%);
   height: 100vh;
 }/*# sourceMappingURL=style.css.map */
