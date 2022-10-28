@@ -15,7 +15,7 @@ function Household() {
     
       <section className='topnav'>
         <div className="back-btn">
-          <NavLink to="/" end><IoMdArrowBack /></NavLink>
+          <NavLink to="/Forside"><IoMdArrowBack /></NavLink>
         </div>
         <PersonalOrHouseBtn/>
         </section>

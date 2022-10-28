@@ -3,6 +3,10 @@
 /* ------- MEDLEMMER SIDE ------- */
 /* intro/header */
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+html {
+  height: 100vh;
+}
+
 a:link {
   text-decoration: none;
 }
