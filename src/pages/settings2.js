@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {BsPersonFill} from 'react-icons/bs'
-import { MdToggleOff } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
+import Ldcomponent from '../components/ld.js';
 //  Nadia
 
 export default function SettingsPage() {
@@ -70,10 +70,7 @@ export default function SettingsPage() {
     </div>
 
     {/*light / dark mode knap/icon*/}
-    <div className="ld-container" >
-    <p className="ld-tekst">light/dark</p>
-        <MdToggleOff size={35} className="switch-ld" style={{overflow:'visible', height:'50px', width:'400px', paddingLeft:'2px'}}/>
-    </div>
+    <Ldcomponent/>
           <br></br>
 
         {/*change background knap*/}

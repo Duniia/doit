@@ -206,25 +206,6 @@
     padding-bottom: 8px;
   }
 
-  /* LIGHT/DARK MODE icon og tekst */
-  .ld-container {
-    text-align: center;
-    overflow: visible !important;
-
-    .ld-tekst {
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .switch-ld {
-      padding: 6px 18px;
-      text-align: center;
-      justify-content: center;
-      cursor: pointer;
-      overflow: visible !important;
-    }
-  }
-
   /*change background knap*/
   .buttonbackgroundcontainer {
     text-align: center;
@@ -248,6 +229,56 @@
         text-align: left;
         padding-top: 2vh;
         padding-left: 5vh;
+      }
+    }
+  }
+}
+
+/* ----- LIGHT/DARK MODE icon / knap ----- */
+.ld-btn2 {
+  position: relative;
+  margin: 20px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  .ld-container2 {
+    background-color: #181818;
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: $box-shadow;
+
+    /*den lyse side*/
+    .light-mode {
+      border-radius: 15px;
+      background-color: grey;
+      width: 100px;
+      height: 100%;
+      display: flex;
+      margin: 0;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*den mørke side*/
+    .dark-mode {
+      border-radius: 15px;
+      background-color: #181818;
+      width: 100px;
+      height: 100%;
+      display: flex;
+      margin: 0;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+
+      /*måne ikonet*/
+      .icon-moon {
+        color: $button-blue;
       }
     }
   }
