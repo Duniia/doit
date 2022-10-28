@@ -6,7 +6,6 @@ import ToDoItems from '../components/ToDoItems';
 import ToDoForm from '../components/ToDoForm';
 import Button from '../components/Button';
 import Overskrift from '../components/Overskrift';
-import Opgaver from '../components/Opgaver';
 import OpgaveTitle from '../components/OpgaveTitle';
 import {CgArrowsExpandRight} from 'react-icons/cg'
 import {IoMdArrowBack} from 'react-icons/io'
@@ -41,19 +40,19 @@ function Personlig() {
       <h1>My Personal Tasks</h1>
     <div className='todo-app'>
       {/* Add for each to do into component (todoitems) */}
-      <section className="box">
+      <section className="box1">
           <Overskrift name="Your daily task"/>
-        <div className="Container">
-         <div className="Opgave1">
-           <div className="opgave_container">
+        <div className="Container1">
+         <div className="Opgave11">
+           <div className="opgave_container11">
             <OpgaveTitle name="Fold laundry" />
            <Button/>
           </div>
         </div>
         
 
-       <div className="Opgave2">
-         <div className="Opgave_container2">
+       <div className="Opgave22">
+         <div className="Opgave_container22">
            <OpgaveTitle name="Cook dinner" /> 
             <Button/>
           </div>
@@ -69,19 +68,19 @@ function Personlig() {
       })}
     </div>
     <div className='todo-app'>
-    <section className="box">
+    <section className="box1">
           <Overskrift name="Your weekly task"/>
-        <div className="Container">
-         <div className="Opgave1">
-           <div className="opgave_container">
+        <div className="Container1">
+         <div className="Opgave11">
+           <div className="opgave_container11">
             <OpgaveTitle name="Fold laundry" />
            <Button/>
           </div>
           
         </div>
 
-       <div className="Opgave2">
-         <div className="Opgave_container2">
+       <div className="Opgave22">
+         <div className="Opgave_container22">
            <OpgaveTitle name="Cook dinner" /> 
             <Button/>
           </div>
@@ -92,7 +91,7 @@ function Personlig() {
      </div>
    </section>
     </div>
-    {/* <ToDoForm addTodo={addTodo}/> */}
+    <ToDoForm addTodo={addTodo}/>
     </>
   )
 }
