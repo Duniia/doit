@@ -28,8 +28,11 @@ a:active {
   margin: 0;
 }
 
-/* intro  */
-.medlemmertest-header {
+.medlemmertest {
+  height: 100vh;
+  width: 100%;
+}
+.medlemmertest .medlemmertest-header {
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 38px;
   text-align: center;
@@ -38,6 +41,7 @@ a:active {
   margin-top: 20px;
 }
 
+/* intro  */
 .medlemmertest-text {
   font-family: "Nunito", sans-serif;
   text-align: center;
