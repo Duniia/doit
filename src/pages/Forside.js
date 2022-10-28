@@ -16,7 +16,9 @@ export default function Forside() {
     <>
     <section className="Top">
       <h1>doit</h1>
-     <PersonIkon/>
+
+      <NavLink to="/Profil"><PersonIkon/></NavLink>
+     
      </section>
 
        <section className="box">
