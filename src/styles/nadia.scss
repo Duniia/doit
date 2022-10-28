@@ -209,6 +209,7 @@
   /* LIGHT/DARK MODE icon og tekst */
   .ld-container {
     text-align: center;
+    overflow: visible !important;
 
     .ld-tekst {
       font-size: 13px;
