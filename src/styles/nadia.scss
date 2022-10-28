@@ -9,8 +9,10 @@
   margin: 0;
 }
 
-/* intro  */
-.medlemmertest-header {
+.medlemmertest {
+    height: 100vh;
+    width: 100%;
+    .medlemmertest-header {
   font-family: $font-one;
   font-size: 38px;
   text-align: center;
@@ -18,6 +20,9 @@
   color: $font-color-black;
   margin-top: 20px;
 }
+}
+/* intro  */
+
 
 .medlemmertest-text {
   font-family: $font-two;

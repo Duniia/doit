@@ -6,7 +6,7 @@ import { GrAdd } from "react-icons/gr";
 
 export default function MedlemmerPage() {
   return (
-    <section>
+    <section className="medlemmertest">
       <header> 
         {/*intro*/}
         <h1 className="medlemmertest-header"> My Household</h1>
