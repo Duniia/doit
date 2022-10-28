@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap");
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*stylet af Michelle */
+.Btn {
+  height: 25px;
+  width: 50px;
+  background: #FFA876;
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  right: 15px;
+}
+
+.New {
+  height: 40px;
+  width: 275px;
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+}
+.New h2 {
+  position: inherit;
+}
+
+.plus {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+  right: 5px;
+  font-size: 35px;
+}
+
+.Top {
+  background: rgb(255, 222, 203);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+.box {
+  height: 275px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Container {
+  height: 235px;
+  width: 310px;
+  border-radius: 30px;
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.opgave_container {
+  height: 45px;
+  width: 271px;
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Opgave1 {
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+}
+
+.Opgave_container2 {
+  height: 45px;
+  width: 271px;
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Opgave2 {
+  position: relative;
+  bottom: 30px;
+  left: 10px;
+}
+
+.List_container {
+  height: 125px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.addnew {
+  height: 60px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Insert_text {
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+
+.List_one {
+  height: 125px;
+  width: 125px;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  background: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.List_two {
+  height: 125px;
+  width: 125px;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  background: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.List_arrow {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.T {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tilbage_pil {
+  height: 35px;
+  width: 35px;
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ny_opgave {
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.Task_name {
+  height: 60px;
+  width: 271px;
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+
+.When {
+  height: 60px;
+  width: 271px;
+  background: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+
+.hvem {
+  height: 45px;
+  width: 150px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.Pr_container {
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personer {
+  height: 50px;
+  width: 271px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Todo_btn {
+  height: 35px;
+  width: 75px;
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgba(123, 194, 209, 0.6);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+
+h2 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.ikon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #fcfcfc;
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  position: relative;
+  right: 10px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightgrey;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: #fcfcfc;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: rgba(123, 194, 209, 0.6);
+  box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.rounded {
+  border-radius: 34px;
+}
+
+.slider.rounded:before {
+  border-radius: 50%;
+}/*# sourceMappingURL=michelle.css.map */

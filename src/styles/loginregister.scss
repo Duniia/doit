@@ -47,6 +47,8 @@
             font-size: 14px;
             box-shadow: $box-shadow;
             cursor: pointer;
+            border: none;
+            outline: none;
         }
 
         #forgortPassword {
@@ -111,5 +113,5 @@
                 background-color:transparent;
             }
         }
-    }
+    }   
 }

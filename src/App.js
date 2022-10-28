@@ -14,6 +14,7 @@ import NewTask from "./pages/NewTask";
 import Household from "./pages/Household";
 import SignIn from './pages/Signin';
 import Register from './pages/Register';
+import Profil from "./pages/Profil";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="settings" element={<SettingsPage />}/>
         <Route path="NewTask" element={<NewTask />}/>
         <Route path="Household" element={<Household />}/>
+        <Route path="Profil" element={<Profil />}/>
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/" element={<SignIn/>}/>
         <Route path="register" element={<Register/>}/>

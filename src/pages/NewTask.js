@@ -1,7 +1,6 @@
 // kodet af Michelle
 import React , {useState} from "react";
 import { NavLink } from "react-router-dom";
-import '../styles/newtask.css';
 import {BsArrowLeft} from 'react-icons/bs'
 import PersonIkon from '../components/PersonIkon';
 import InsertText from '../components/InsertText';

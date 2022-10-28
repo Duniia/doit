@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import '../styles/forside.css';
 import PersonIkon from '../components/PersonIkon';
 import Opgaver from '../components/Opgaver';
 import Overskrift from '../components/Overskrift';
@@ -17,7 +16,9 @@ export default function Forside() {
     <>
     <section className="Top">
       <h1>doit</h1>
-     <PersonIkon/>
+
+      <NavLink to="/Profil"><PersonIkon/></NavLink>
+     
      </section>
 
        <section className="box">
