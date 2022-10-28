@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import '../styles/forside.css';
 import PersonIkon from '../components/PersonIkon';
 import Opgaver from '../components/Opgaver';
@@ -48,7 +49,8 @@ export default function App() {
      </section>
 
      <section className="addnew">
-      <AddTask /> 
+     <NavLink to="/NewTask"><AddTask />
+      </NavLink>
      </section>
   </>
   );

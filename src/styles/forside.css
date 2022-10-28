@@ -83,4 +83,9 @@
       top: 50px; 
       display: flex;
       justify-content: center;
+
+    }
+
+    .NavLink {
+      text-decoration: none; 
     }

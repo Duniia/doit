@@ -5,6 +5,7 @@ import '../styles/newtask.css';
 import {BsArrowLeft} from 'react-icons/bs'
 import PersonIkon from '../components/PersonIkon';
 import InsertText from '../components/InsertText';
+import Switch from '../components/Switch';
 
 
 export default function NewTask() {
@@ -23,9 +24,10 @@ export default function NewTask() {
         
         <div className="ny_opgave">
             <h1>New task</h1>
-            <div className="Task_name">
-            <InsertText name="Task name" /> 
-            </div>
+            <form className="Task_name" >
+            <input type="text" />
+            </form>
+          
             <div className="When">
             <InsertText name="When to do it" /> 
             </div>
