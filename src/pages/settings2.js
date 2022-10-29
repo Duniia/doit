@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import { AiOutlineUser } from "react-icons/ai";
-import { BsToggleOn } from "react-icons/bs";
+import {BsPersonFill} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom';
+import Ldcomponent from '../components/ld.js';
 //  Nadia
 
 export default function SettingsPage() {
@@ -29,11 +29,12 @@ export default function SettingsPage() {
         <div className="row-settings">
           <div className="column-settings">
             {" "}
-            <AiOutlineUser size={30} />
+            <BsPersonFill className="profilsettingsicon" size={40} style={{
+          backgroundColor: 'white', borderRadius: '70px', padding:'3px' }}/>
             Name
           </div>
           <div className="column-settings">
-            <NavLink to="/" className="button-log" type="button">
+            <NavLink to="/" className="button-log" type="button" style={{marginTop:'10px' }}>
               Log out
             </NavLink>
           </div>
@@ -69,10 +70,7 @@ export default function SettingsPage() {
     </div>
 
     {/*light / dark mode knap/icon*/}
-    <div className="ld-container">
-    <p className="ld-tekst">light/dark</p>
-        <BsToggleOn size={35} className="switch-ld"/>
-    </div>
+    <Ldcomponent/>
           <br></br>
 
         {/*change background knap*/}

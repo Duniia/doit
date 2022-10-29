@@ -1,28 +1,28 @@
 /*  Nadia*/
 
 /* ------- MEDLEMMER SIDE ------- */
-/* intro/header */
-@import "variables.scss";
+
+@import 'variables.scss';
 
 // * {
 //   padding: 0;
 //   margin: 0;
 // }
 
+/* intro/header */
 .medlemmertest {
-    height: 100vh;
-    width: 100%;
-    .medlemmertest-header {
-  font-family: $font-one;
-  font-size: 38px;
-  text-align: center;
+  height: 100vh;
   width: 100%;
-  color: $font-color-black;
-  margin-top: 20px;
+  .medlemmertest-header {
+    font-family: $font-one;
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    color: $font-color-black;
+    margin-top: 20px;
+  }
 }
-}
-/* intro  */
-
+/* intro - tekst */
 
 .medlemmertest-text {
   font-family: $font-two;
@@ -87,33 +87,29 @@
 
 /* tilføj medlem knap */
 .add-container2 {
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    width: 250px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: bold;
-    color: $font-color-black;
-    background-color: $button-blue;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 250px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $font-color-black;
+  background-color: $button-blue;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+
+  .add1-knap {
+    margin: 0;
+  }
+
+  /* tilføj plus ikon */
+  .icon5 {
     cursor: pointer;
-    box-shadow: $box-shadow;
-
-    .add1-knap {
-        margin: 0;
-    }
-    
-    /* tilføj plus ikon */
-    .icon5 {
-        cursor: pointer;
-    }
-}
-
-.add1-knap:hover {
-  background-color: $white;
+  }
 }
 
 /* ------- SETTINGS SIDE ------- */
@@ -126,118 +122,164 @@
 
     /*intro*/
     .settings-header {
-        font-family: $font-one;
-        font-size: 38px;
-        text-align: center;
-        width: 100%;
-        color: $font-color-black;
-        margin-top: 20px;
-        }
+      font-family: $font-one;
+      font-size: 38px;
+      text-align: center;
+      width: 100%;
+      color: $font-color-black;
+      margin-top: 20px;
+    }
+  }
+
+  /* Clear floats after the columns - header content */
+  .row-settings:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /*settings header content */
+  .column-settings {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+    /*profil icon */
+    .profilsettingsicon {
+      padding: 10px;
+      background: $white;
+      box-shadow: $box-shadow;
+      border-radius: 70px;
+      margin-bottom: 2px;
     }
 
-    /* Clear floats after the columns - header content */
-    .row-settings:after {
-        content: '';
-        display: table;
-        clear: both;
+    /* log ud knap */
+    .button-log {
+      background-color: $button-blue;
+      color: $font-color-black;
+      padding: 6px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 25px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+  .settingboks-container {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* settings info(bokse)  */
+    .settingboks {
+      width: 45vh;
+      height: 8vh;
+      border-radius: 10vh;
+      padding-left: 7vh;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: $white;
+      color: $font-color-black;
+      box-shadow: $box-shadow;
+
+      .settingboks:hover {
+        background-color: $button-blue;
+      }
+
+      .settings-btn-text {
+        padding-top: 2vh;
+      }
+    }
+  }
+
+  /* vælg tema tekst */
+  .theme-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 8px;
+  }
+
+  /*change background knap*/
+  .buttonbackgroundcontainer {
+    text-align: center;
+    justify-content: center;
+
+    .buttonbackground {
+      background-color: $button-blue;
+      color: $font-color-black;
+      box-shadow: $box-shadow;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 25px;
+      width: 45vh;
+      height: 8vh;
+      border-radius: 10vh;
+      padding-left: 7vh;
+      font-size: 14px;
+
+      .btn-knaptekst {
+        text-align: left;
+        padding-top: 2vh;
+        padding-left: 5vh;
+      }
+    }
+  }
+}
+
+/* ----- LIGHT/DARK MODE icon / knap fra component ld----- */
+.ld-btn2 {
+  position: relative;
+  margin: 20px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  .ld-container2 {
+    background-color: #181818;
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: $box-shadow;
+
+    /*den lyse side*/
+    .light-mode {
+      border-radius: 15px;
+      background-color: grey;
+      width: 100px;
+      height: 100%;
+      display: flex;
+      margin: 0;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
     }
 
-    /*settings header content */
-    .column-settings {
-        float: left;
-        width: 50%;
-        text-align: center;
+    /*den mørke side*/
+    .dark-mode {
+      border-radius: 15px;
+      background-color: #181818;
+      width: 100px;
+      height: 100%;
+      display: flex;
+      margin: 0;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
 
-        /* log ud knap */
-        .button-log {
-            background-color: $button-blue;
-            color: $font-color-black;
-            padding: 6px 18px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 25px;
-            font-size: 14px;
-        }
+      /*måne ikonet*/
+      .icon-moon {
+        color: $button-blue;
+      }
     }
-
-    .settingboks-container {
-        margin-top: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        /* settings info(bokse)  */
-        .settingboks {
-            width: 45vh;
-            height: 8vh;
-            border-radius: 10vh;
-            padding-left: 7vh;
-            font-size: 14px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            text-decoration: none;
-            background-color: $white;
-            color: $font-color-black;
-            box-shadow: $box-shadow;
-    
-            .settings-btn-text {
-                padding-top: 2vh;
-            }
-        }
-    }
-
-
-    /* vælg tema tekst */
-    .theme-text {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding-bottom: 8px;
-    }
-
-    /* LIGHT/DARK MODE icon */
-    .ld-container {
-        text-align: center;
-    
-        .ld-tekst {
-            font-size: 13px;
-            font-weight: bold;
-        }
-    
-        .switch-ld {
-            padding: 6px 18px;
-            text-align: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-    }
-
-    /*change background knap*/
-    .buttonbackgroundcontainer {
-        text-align: center;
-        justify-content: center;
-    
-        .buttonbackground {
-            background-color: $button-blue;
-            color: $font-color-black;
-            box-shadow: $box-shadow;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 25px;
-            width: 45vh;
-            height: 8vh;
-            border-radius: 10vh;
-            padding-left: 7vh;
-            font-size: 14px;
-    
-            .btn-knaptekst {
-                text-align: left;
-                padding-top: 2vh;
-                padding-left: 5vh;
-            }
-        }
-    }
+  }
 }
