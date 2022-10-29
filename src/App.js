@@ -5,6 +5,7 @@ import './styles/personlig.css';
 import './styles/variables.css';
 import './styles/style.css';
 import './styles/loginregister.css';
+import './styles/nadia2.css';
 import './styles/michelle.css';
 import './styles/profile.css'
 import Forside from './pages/Forside'
