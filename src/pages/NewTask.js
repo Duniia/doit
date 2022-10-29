@@ -23,7 +23,6 @@ export default function NewTask() {
         console.log(...todos);
     }; 
 
-  
 
     return (
         <>
