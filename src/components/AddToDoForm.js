@@ -1,4 +1,4 @@
-// import { prependOnceListener } from 'process';
+// kodet af Michelle
 import React, { useState } from 'react'; 
 
 export default function(props) {

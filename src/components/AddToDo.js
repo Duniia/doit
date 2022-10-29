@@ -1,7 +1,6 @@
+// Kodet af Michelle
+
 import React, { useState } from "react";
-
-import AddToDoForm from "./AddToDoForm";
-
 
 export default function Todo({todos, completeTodo}) {
 
