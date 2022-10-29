@@ -8,10 +8,10 @@ import Button from '../components/Button';
 import Lists from '../components/Lists';
 import AddTask from '../components/AddTask'; 
 
+
 // kodet af Michelle
 
 export default function Forside() {
-
   return (
     <>
     <section className="Top">
@@ -40,6 +40,7 @@ export default function Forside() {
             <Button/>
           </div>
         </div>
+      
 
      </div>
    </section>
