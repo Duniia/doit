@@ -2,12 +2,7 @@
 
 import React, { useState } from "react";
 
-export default function Todo({todos, completeTodo}) {
-
-    const [edit, setEdit] = useState({
-        id:null,
-        value: ''
-    }) 
+export default function AddTodo({todos, completeTodo}) {
 
     return todos.map((todo, index) => (
         <div className= {todo.isComplete ? 'todo-row complete' :

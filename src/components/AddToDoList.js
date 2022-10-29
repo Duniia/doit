@@ -26,6 +26,7 @@ export default function AddToDoList() {
 
         setTodos(updatedTodos); 
     }
+    
     return (
         <>
         <h1>New task</h1>
