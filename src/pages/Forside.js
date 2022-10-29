@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import PersonIkon from '../components/PersonIkon';
 import Opgaver from '../components/Opgaver';
@@ -8,10 +8,10 @@ import Button from '../components/Button';
 import Lists from '../components/Lists';
 import AddTask from '../components/AddTask'; 
 
-
 // kodet af Michelle
 
 export default function Forside() {
+
   return (
     <>
     <section className="Top">
@@ -22,7 +22,7 @@ export default function Forside() {
      </section>
 
        <section className="box">
-        <div className="Container">
+        <div className="Container" >
           <Overskrift name="Your next task"/>
 
          <div className="Opgave1">

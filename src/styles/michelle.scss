@@ -215,7 +215,8 @@
      margin-top: 25px;
     }
     
-    .Task_name {
+ // styling af form på new task siden. 
+    .add-todo-form {
         height: 60px;
         width: 271px;
         background: $white; 
@@ -350,5 +351,3 @@
         .slider.rounded:before {
             border-radius: 50%;
         }
-
-   

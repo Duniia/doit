@@ -17,10 +17,10 @@ export default function AddToDoList() {
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
             if (todo.id === id) {
-                todo.isComplete = !todo.isComplete
+                todo.isComplete = !todo.isComplete;
             }
-             return todo
-        })
+             return todo;
+        });
 
         setTodos(updatedTodos); 
     }
@@ -30,4 +30,4 @@ export default function AddToDoList() {
         <AddToDoForm onSubmit={addTodo} />
         </>
     )
-}
+};

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import AddToDoForm from "./AddToDoForm";
-import AddToDoList from "./AddToDoList";
 
-export default function({todos, completeTodo}) {
+import AddToDoForm from "./AddToDoForm";
+
+
+export default function Todo({todos, completeTodo}) {
 
     const [edit, setEdit] = useState({
         id:null,
@@ -13,13 +14,11 @@ export default function({todos, completeTodo}) {
         <div className= {todo.isComplete ? 'todo-row complete' :
          'todo-row'} key={index}>  
 
-         <div key={todo.id} conClick={() => completeTodo(todo.id)}>
+         <div key={todo.id} onClick={() => completeTodo(todo.id)}>
             {todo.text}
          </div>
-
-         <div className="ikoner">
-
-         </div>
-         </div>
+        
+         
+        </div>
     )); 
-}
+};

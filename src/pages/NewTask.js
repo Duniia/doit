@@ -8,9 +8,22 @@ import Switch from '../components/Switch';
 import AddToDoList from '../components/AddToDoList';
 
 
+
 export default function NewTask() {
 
     const [isToggled, setIsToogled] =useState(false)
+
+    const [todos, setTodos] =useState([])
+    
+    const addTodo = todo => {
+
+        const newTodos = [todo, ...todos]
+
+        setTodos(newTodos)
+        console.log(...todos);
+    }; 
+
+  
 
     return (
         <>
@@ -24,7 +37,7 @@ export default function NewTask() {
         
         <div className="ny_opgave">
             
-          <AddToDoList/>
+            <AddToDoList/>
             <div className="When">
             <InsertText name="When to do it" /> 
             </div>
@@ -40,7 +53,8 @@ export default function NewTask() {
              <PersonIkon />
             </div>
             <Switch rounded={true} isToogled={isToggled} 
-            onToogle={() => setIsToogled(!isToggled)}/>
+            onToogle={() => setIsToogled(!isToggled)} onSubmit={addTodo} />
+
         </div>
         </section>
    
