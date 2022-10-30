@@ -9,9 +9,11 @@ import Lists from '../components/Lists';
 import AddTask from '../components/AddTask'; 
 
 
+
 // kodet af Michelle
 
-export default function Forside() {
+export default function Forside({todos}) {
+
   return (
     <>
     <section className="Top">
@@ -25,21 +27,15 @@ export default function Forside() {
         <div className="Container" >
           <Overskrift name="Your next task"/>
 
-         <div className="Opgave1">
-          <Opgaver name="Personal" />
+          {todos.map(todo =>(<div className="Opgave1">
+          <Opgaver name={todo.category} />
            <div className="opgave_container">
-            <OpgaveTitle name="Fold laundry" />
+            <OpgaveTitle name={todo.title} />
            <Button/>
           </div>
-        </div>
+        </div>))}  
 
-       <div className="Opgave2">
-        <Opgaver name="Household" />
-         <div className="Opgave_container2">
-           <OpgaveTitle name="Cook dinner" /> 
-            <Button/>
-          </div>
-        </div>
+      
       
 
      </div>

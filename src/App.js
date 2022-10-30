@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import React, { useState} from 'react'; 
 import Nav from './components/Nav';
 import './styles/nav.css';
 import './styles/personlig.css';
@@ -19,21 +20,28 @@ import Register from './pages/Register';
 import Profil from "./pages/Profil";
 
 function App() {
+
+  const [todos, setTodosState]= useState(JSON.parse(localStorage.getItem("todos") || "[]")) 
+ 
+ const addTodo = (todo) => {
+  setTodosState([...todos, todo ]) 
+  localStorage.setItem(JSON.stringify([...todos, todo ])) 
+ }
   return (
     <>
       <Nav/>
       <Routes>
-        <Route path="forside" element={<Forside />}/>
+        <Route path="forside" element={<Forside todos={todos} />}/>
         <Route path="Personlig" element={<Personlig />}/>
         <Route path="medlemmer" element={<MedlemmerPage />}/>
         <Route path="settings" element={<SettingsPage />}/>
-        <Route path="NewTask" element={<NewTask />}/>
+        <Route path="NewTask" element={<NewTask addTodo={addTodo}/>}/>
         <Route path="Household" element={<Household />}/>
         <Route path="Profil" element={<Profil />}/>
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/" element={<SignIn/>}/>
         <Route path="register" element={<Register/>}/>
-        <Route path="/forside/:currentUser" element={<Forside />} />
+        <Route path="/forside/:currentUser" element={<Forside todos={todos}/>} />
       </Routes>
     </>
   );
