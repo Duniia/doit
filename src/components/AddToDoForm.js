@@ -3,11 +3,6 @@ import React, { useState } from 'react';
 
 export default function({title, setTitle}) {
   
-
-
-
-
-   
     return (
      
 
@@ -20,4 +15,4 @@ export default function({title, setTitle}) {
             />
     
     )
-};
+}; 

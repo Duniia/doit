@@ -25,7 +25,7 @@ function App() {
  
  const addTodo = (todo) => {
   setTodosState([...todos, todo ]) 
-  localStorage.setItem(JSON.stringify([...todos, todo ])) 
+  localStorage.setItem("todos", JSON.stringify([...todos, todo ])) 
  }
   return (
     <>

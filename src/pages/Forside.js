@@ -31,7 +31,7 @@ export default function Forside({todos}) {
           <Opgaver name={todo.category} />
            <div className="opgave_container">
             <OpgaveTitle name={todo.title} />
-           <Button/>
+           <Button />
           </div>
         </div>))}  
 

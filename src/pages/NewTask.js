@@ -8,6 +8,7 @@ import Switch from "../components/Switch";
 import AddToDoForm from "../components/AddToDoForm";
 
 
+
 export default function NewTask({ addTodo }) {
   const [isToggled, setIsToogled] = useState(false);
   const [title, setTitle] = useState("");
@@ -46,6 +47,8 @@ export default function NewTask({ addTodo }) {
             onToogle={() => {
               setIsToogled(true);
               addTodo({title, category: "Personal"})
+              window.location.href = "/forside"
+              // window.history.push("/Forside")
             }}
           />
         </div>
