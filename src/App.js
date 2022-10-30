@@ -19,6 +19,7 @@ import SignIn from './pages/Signin';
 import Register from './pages/Register';
 import Profil from "./pages/Profil";
 
+
 function App() {
 
   const [todos, setTodosState]= useState(JSON.parse(localStorage.getItem("todos") || "[]")) 
@@ -27,6 +28,7 @@ function App() {
   setTodosState([...todos, todo ]) 
   localStorage.setItem("todos", JSON.stringify([...todos, todo ])) 
  }
+
   return (
     <>
       <Nav/>

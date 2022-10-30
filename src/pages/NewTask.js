@@ -48,7 +48,6 @@ export default function NewTask({ addTodo }) {
               setIsToogled(true);
               addTodo({title, category: "Personal"})
               window.location.href = "/forside"
-              // window.history.push("/Forside")
             }}
           />
         </div>
