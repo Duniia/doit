@@ -67,14 +67,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.signInPage .signIn-greeting, .signInPage .register-greeting, .registerPage .signIn-greeting, .registerPage .register-greeting {
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  font-size: 24px;
-  width: 240px;
-  margin: 0 auto;
-  color: #181818;
-}
 .signInPage .signIn-header, .signInPage .register-header, .registerPage .signIn-header, .registerPage .register-header {
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 58px;
@@ -82,6 +74,14 @@ body {
   width: 100%;
   color: #181818;
   margin: 0;
+}
+.signInPage .signIn-greeting, .signInPage .register-greeting, .registerPage .signIn-greeting, .registerPage .register-greeting {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  width: 240px;
+  margin: 0 auto;
+  color: #181818;
 }
 .signInPage p, .registerPage p {
   margin-top: 15px;
@@ -207,23 +207,32 @@ body {
 
 .Top {
   height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
-.Top h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 25px;
-  position: relative;
-  top: 8px;
-  left: 10px;
+.Top .ikon {
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  color: #181818;
+}
+
+.frontpageHeader {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 58px;
+  text-align: center;
+  width: 100%;
+  color: #181818;
+  padding: 30px 0 0;
 }
 
 .box {
-  height: 275px;
+  height: 260px;
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 .box .Container {
   height: 235px;
@@ -232,28 +241,35 @@ body {
   background: #fcfcfc;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   margin: 10px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+.box .Container h4 {
+  margin-left: 10px;
 }
 .box .opgave_container {
   height: 45px;
-  width: 271px;
+  width: 90%;
   background: #fcfcfc;
   border-radius: 15px;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 10px;
+}
+.box .opgave_container p {
+  padding-left: 10px;
 }
 .box .Opgave1 {
-  position: relative;
-  bottom: 15px;
-  left: 10px;
+  margin: 10px auto;
+  width: 100%;
 }
 .box .Opgave_container2 {
   height: 45px;
-  width: 271px;
+  width: 100%;
   background: #fcfcfc;
   border-radius: 15px;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
@@ -271,7 +287,7 @@ body {
   height: 125px;
   display: flex;
   justify-content: space-around;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 
 .addnew {
@@ -298,6 +314,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+.List_one h4 {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .List_two {
   height: 125px;
@@ -308,6 +328,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.List_two h4 {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .List_arrow {
@@ -496,7 +520,7 @@ input:checked + .slider:before {
 .back-profile {
   display: flex;
   justify-content: space-between;
-  margin: 25px;
+  padding: 25px;
   max-width: 100%;
   padding: 18px;
   border: none;

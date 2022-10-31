@@ -18,12 +18,10 @@ export default function Forside({todos}) {
   return (
     <section className='frontpage'>
       <section className="Top">
-        <h1>doit</h1>
-
         <NavLink to="/Profil"><PersonIkon className="profilikon"/></NavLink>
-      
       </section>
 
+      <h1 className='frontpageHeader'>doit</h1>
         <section className="box">
           <div className="Container" >
             <Overskrift name="Your next task"/>
