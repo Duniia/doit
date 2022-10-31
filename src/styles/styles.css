@@ -576,6 +576,15 @@ input:checked + .slider:before {
   margin-bottom: 150px;
 }
 
+.household {
+  overflow-y: scroll;
+  height: 100vh;
+  background: rgb(255, 222, 203);
+  background-size: cover;
+  background: linear-gradient(180deg, rgba(255, 222, 203, 0.6954131995) 0%, rgba(255, 219, 199, 0.7962535356) 45%, rgba(114, 230, 255, 0.1632003143) 90%);
+  padding-bottom: 150px;
+}
+
 .personlighousehold-page {
   margin: 0;
 }
