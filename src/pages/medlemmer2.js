@@ -63,7 +63,7 @@ export default function MedlemmerPage() {
           <br></br>
           {/*tilføj ny medlem knap - fiks længde og ikon(responsiv)*/}
           <div className="add-container2">
-            <p className="add1-knap">Add new Member</p>
+            <p className="add1-knap">Add new member</p>
             <GrAdd className="icon5" />
           </div>
         </div>
