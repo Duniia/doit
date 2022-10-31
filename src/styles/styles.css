@@ -233,6 +233,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Nunito", sans-serif;
 }
 .box .Container {
   height: 235px;
@@ -262,6 +263,7 @@ body {
 }
 .box .opgave_container p {
   padding-left: 10px;
+  font-family: "Nunito", sans-serif;
 }
 .box .Opgave1 {
   margin: 10px auto;
@@ -288,6 +290,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
+  font-family: "Nunito", sans-serif;
 }
 
 .addnew {
@@ -296,6 +299,7 @@ body {
   top: 20px;
   display: flex;
   justify-content: center;
+  font-family: "Nunito", sans-serif;
 }
 
 .Insert_text {
@@ -382,6 +386,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
+  font-family: "Nunito", sans-serif;
 }
 
 .Task_name {
@@ -391,6 +396,7 @@ body {
   border-radius: 15px;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
+  font-family: "Nunito", sans-serif;
 }
 
 .When {
@@ -417,6 +423,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-family: "Nunito", sans-serif;
 }
 
 .personer {
@@ -436,6 +443,7 @@ body {
   background-color: rgba(123, 194, 209, 0.6);
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
   cursor: pointer;
+  font-family: "Nunito", sans-serif;
 }
 
 .overskrift h2 {
@@ -540,6 +548,7 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 .profile h1 {
   padding-bottom: 20px;
@@ -563,6 +572,7 @@ input:checked + .slider:before {
   justify-content: center;
   padding: 20px;
   align-items: center;
+  font-family: "Nunito", sans-serif;
 }
 .profile .profile-form #change {
   width: 200px;
@@ -680,6 +690,7 @@ input:checked + .slider:before {
   background: #F9F9F9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  font-family: "Nunito", sans-serif;
 }
 .personlighousehold-page .Container1 {
   margin: 10px 20px 10px 30px;
@@ -821,6 +832,7 @@ input:checked + .slider:before {
   background-color: rgba(123, 194, 209, 0.6);
   cursor: pointer;
   box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+  font-family: "Nunito", sans-serif;
   /* tilføj plus ikon */
 }
 .add-container2 .add1-knap {
@@ -864,6 +876,7 @@ input:checked + .slider:before {
   float: left;
   width: 50%;
   text-align: center;
+  font-family: "Nunito", sans-serif;
   /*profil icon */
   /* log ud knap */
 }
@@ -898,6 +911,7 @@ input:checked + .slider:before {
   border-radius: 10vh;
   padding-left: 7vh;
   font-size: 14px;
+  font-family: "Nunito", sans-serif;
   border: none;
   outline: none;
   cursor: pointer;
@@ -917,6 +931,7 @@ input:checked + .slider:before {
   justify-content: center;
   display: flex;
   padding-bottom: 8px;
+  font-family: "Nunito", sans-serif;
 }
 .settingsmain .buttonbackgroundcontainer {
   text-align: center;
@@ -940,6 +955,7 @@ input:checked + .slider:before {
   text-align: left;
   padding-top: 2vh;
   padding-left: 5vh;
+  font-family: "Nunito", sans-serif;
 }
 
 /* ----- LIGHT/DARK MODE icon / knap fra component ld----- */
