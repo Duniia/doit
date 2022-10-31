@@ -559,6 +559,11 @@ body {
 
 // Styling of profile
 //Dunia
+.profile-page {
+    height: 100vh;
+    @include background;
+}
+
 .back-profile{
     display: flex;
     justify-content: space-between;

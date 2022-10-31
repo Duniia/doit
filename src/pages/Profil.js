@@ -7,7 +7,7 @@ import Nav from '../components/Nav';
 
 function Profil() {
   return (
-    <>
+    <section className='profile-page'>
           <div className=" back-profile">
         <NavLink to="/Forside"><IoMdArrowBack /></NavLink>
       </div>
@@ -25,7 +25,7 @@ function Profil() {
     </section>
     
     <Nav/>
-    </>
+    </section>
     )
 }
 
