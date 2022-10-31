@@ -22,12 +22,7 @@ import Profil from "./pages/Profil";
 
 function App() {
 
-  const [todos, setTodosState]= useState(JSON.parse(localStorage.getItem("todos") || "[]")) 
- 
- const addTodo = (todo) => {
-  setTodosState([...todos, todo ]) 
-  localStorage.setItem("todos", JSON.stringify([...todos, todo ])) 
- }
+
 
   return (
     <>
