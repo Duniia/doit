@@ -657,6 +657,12 @@ body {
     }
 }
 
+.household {
+  overflow-y: scroll;
+  height: 100vh;
+  @include background;
+  padding-bottom: 150px;
+}
 .personlighousehold-page {
     margin: 0;
   
