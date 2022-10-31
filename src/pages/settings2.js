@@ -33,8 +33,7 @@ export default function SettingsPage() {
   <div className="row-settings">
     <div className="column-settings">
      {" "}
-    <BsPersonFill className="profilsettingsicon" size={40} style={{
-     backgroundColor: 'white', borderRadius: '70px', padding:'3px' }}/>
+    <BsPersonFill className="profilsettingsicon" size={40} style={{ padding:'3px' }}/>
      Name
     </div>
 
