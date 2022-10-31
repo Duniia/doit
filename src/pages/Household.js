@@ -8,6 +8,7 @@ import {IoMdArrowBack} from 'react-icons/io'
 import { NavLink } from "react-router-dom";
 import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
 import Nav from '../components/Nav';
+import AddTask from '../components/AddTask';
 
 function Household() {
   
@@ -70,6 +71,10 @@ function Household() {
    </section>
    </section>
    
+   <section className="addnew">
+      <NavLink to="/NewTask"><AddTask />
+      </NavLink>
+     </section> 
    <Nav/>
     </>
   )
