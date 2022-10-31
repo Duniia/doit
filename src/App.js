@@ -21,7 +21,7 @@ import Profil from "./pages/Profil";
 function App() {
   return (
     <>
-      <Nav/>
+      {/* <Nav/> */}
       <Routes>
         <Route path="forside" element={<Forside />}/>
         <Route path="Personlig" element={<Personlig />}/>

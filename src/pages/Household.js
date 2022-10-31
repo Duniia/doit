@@ -7,6 +7,7 @@ import {CgArrowsExpandRight} from 'react-icons/cg'
 import {IoMdArrowBack} from 'react-icons/io'
 import { NavLink } from "react-router-dom";
 import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
+import Nav from './components/Nav';
 
 function Household() {
   
@@ -68,6 +69,8 @@ function Household() {
      </div>
    </section>
    </section>
+   
+   <Nav/>
     </>
   )
 }

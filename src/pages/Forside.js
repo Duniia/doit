@@ -7,6 +7,7 @@ import OpgaveTitle from '../components/OpgaveTitle';
 import Button from '../components/Button';
 import Lists from '../components/Lists';
 import AddTask from '../components/AddTask'; 
+import Nav from './components/Nav';
 
 
 // kodet af Michelle
@@ -53,6 +54,8 @@ export default function Forside() {
       <NavLink to="/NewTask"><AddTask />
       </NavLink>
      </section> 
+     
+     <Nav/>
   </>
   );
 }; 
