@@ -4,7 +4,7 @@ import { AiFillDownCircle } from "react-icons/ai";
 import { GrAdd } from "react-icons/gr";
 import Nav from '../components/Nav';
 //  Nadia
-
+ 
 export default function MedlemmerPage() {
   return (
     <section className="medlemmertest">
@@ -55,7 +55,7 @@ export default function MedlemmerPage() {
           <br></br>
           {/*scroll ned knap*/}
           <div className="scroll-container">
-            <a href="/#">
+            <a href="#">
               {" "}
               <AiFillDownCircle className="scroll-icon" size={40} />
             </a>
