@@ -1,12 +1,12 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import './styles/nav.css';
-import './styles/personlig.css';
-import './styles/variables.css';
-import './styles/style.css';
-import './styles/loginregister.css';
-import './styles/nadia.css';
-import './styles/michelle.css';
-import './styles/profile.css'
+// import './styles/nav.css';
+// import './styles/personlig.css';
+// import './styles/variables.css';
+import './styles/styles.css';
+// import './styles/loginregister.css';
+// import './styles/nadia.css';
+// import './styles/michelle.css';
+// import './styles/profile.css'
 import Forside from './pages/Forside'
 import MedlemmerPage from "./pages/medlemmer2";
 import SettingsPage from "./pages/settings2";

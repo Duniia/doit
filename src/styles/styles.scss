@@ -1,0 +1,772 @@
+// Variables:
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@200&display=swap');
+
+
+// fonts
+$font-one: 'Fuzzy Bubbles', cursive;
+$font-two: 'Nunito', sans-serif;
+
+// font colors
+$font-color-black: #181818;
+$font-color-gray: #555555;
+$font-color-white: #f1f1f1;
+
+// background gradient - @mixin
+@mixin background {
+    background: rgb(255,222,203);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(180deg, 
+        rgba(255,222,203,0.6954131994594712) 0%, 
+        rgba(255,219,199,0.7962535355939251) 45%, 
+        rgba(114,230,255,0.1632003143054097) 90%);
+}
+
+// box-shadow
+$box-shadow: rgb(153, 153, 153) 1.95px 1.95px 2.6px;
+
+// colors
+$button-blue: rgba(123, 194, 209, .6);
+$button-orange: #FFA876;
+$white: #fcfcfc;
+
+// links
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+// Overall styling:
+html {
+    height: 100vh;
+    @include background;
+}
+
+// navbar styling
+.navbar {
+    background: rgba(123, 194, 209, 0.6);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+  }
+  
+  .navbar a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+  
+  .navbar a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar a.active {
+    background: rgb(255, 222, 203);
+    color: rgb(10, 28, 33);
+  }
+//   end of navbar styling
+
+
+// Styling for login and register pages:
+.signInPage, .registerPage {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .signIn-greeting, .register-greeting {
+        font-family: $font-two;
+        text-align: center;
+        font-size: 24px;  
+        width: 240px;
+        margin: 0 auto;
+        color: $font-color-black; 
+    }
+
+    .signIn-header, .register-header {
+        font-family: $font-one;
+        font-size: 58px;
+        text-align: center;
+        width: 100%;
+        color: $font-color-black;
+        margin: 0;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    .signIn-from, .register-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .signIn, .register {
+            width: 250px;
+            margin: 5px auto;
+            padding: 15px 30px;
+            color: gray;
+            // text-align: center;
+            border-radius: 25px;
+            border: none;
+            font-size: 14px;
+            box-shadow: $box-shadow;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        #forgortPassword {
+            text-align: end;
+            width: 310px;
+            margin: 0 auto;
+            text-decoration: none;
+            font-family: $font-two;
+            color: $font-color-gray;
+            cursor: pointer;
+        }
+
+        #signIn, #create {
+            width: 200px;
+            margin: 10px auto;
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            color: $font-color-black;
+            background-color: $button-blue;
+            box-shadow: $box-shadow;
+            cursor: pointer;
+        }
+    }
+
+    .signIn-RegisterBtn {
+        position: relative;
+        margin: 20px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: $font-two;
+        cursor: pointer;
+
+        .signIn-RegisterBtn-container {
+            background-color: $button-orange;
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            display: flex;
+            box-shadow: $box-shadow;
+
+            #signInOrRegisterBtn {
+                width: 100px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                text-decoration: none;
+                color: black;
+            }
+
+            .active {
+                border-radius: 25px;
+                background-color: $white;
+            }
+
+            .inactive {
+                background-color:transparent;
+            }
+        }
+    }   
+}
+// Signin and register styling :end
+
+// Styling of frontpage and add new task:
+
+/*stylet af Michelle */
+// style til check button componenten på din forside 
+.Btn {
+    height: 25px; 
+    width: 50px;
+    background: $button-orange;
+    border: none; 
+    border-radius: 25px;
+    position: relative;
+    right: 15px;  
+}
+
+//  Styling til addTask componenten
+
+.New {
+    height: 40px; 
+    width: 275px; 
+    background: $white; 
+    border-radius: 15px; 
+    box-shadow: $box-shadow;
+    font-size: 12px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    cursor: pointer;
+    color: black; 
+
+    h2 {
+      position: inherit;
+    }
+} 
+
+.plus {
+    height: 35px; 
+    width: 35px; 
+    border-radius: 50%; 
+    position: relative;
+    right: 5px;   
+    font-size: 35px;
+} 
+
+// Styling til selve forsiden
+
+.Top { 
+    background: rgb(255,222,203);
+    height: 50px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-family: $font-two;
+        font-size: 25px;   
+        position: relative;
+        top: 8px; 
+        left:10px;
+      }
+    }
+    
+  
+    
+.box {
+    height: 275px; 
+    display: flex;
+    align-items: flex-end;
+
+    .Container {
+    height: 235px; 
+    width: 310px;
+    border-radius: 30px; 
+    background: $white;
+    box-shadow: $box-shadow;
+    margin: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+      
+.opgave_container {
+    height: 45px; 
+    width: 271px; 
+    background: $white;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Opgave1{
+    position: relative;
+    bottom: 15px; 
+    left: 10px; 
+}
+
+      
+     .Opgave_container2 {
+        height: 45px; 
+        width: 271px; 
+        background: $white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .Opgave2{
+        position: relative;
+        bottom: 30px; 
+        left: 10px; 
+      }
+      
+    }
+    
+    .List_container{
+      height: 125px; 
+      display: flex;
+      justify-content: space-around;
+      margin-top: 35px; 
+    }
+    
+    .addnew {
+      height: 60px;  
+      position: relative;
+      top: 50px; 
+      display: flex;
+      justify-content: center;
+      
+    }
+
+
+    // Styling af text componenten til newtask siden (props) 
+
+    .Insert_text {
+        position: relative;
+        left: 10px;
+        top: 15px;
+    } 
+
+
+    // styling til addtask button componenten på newtask siden 
+
+    .List_one{
+        height: 125px;
+        width: 125px; 
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        background: $white;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      
+      .List_two {
+        height: 125px;
+        width: 125px; 
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        background: $white;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+      } 
+    
+      .List_arrow {
+       display: flex;
+       justify-content: flex-end;
+       position: relative;
+       right: 15px; 
+     
+      }
+
+    //   styling til newtask siden 
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .T {
+        height: 50px;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .tilbage_pil {
+        height: 35px;
+        width: 35px; 
+        background: $white;
+        box-shadow: $box-shadow;
+        border-radius: 50%;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin-left: 10px; 
+        cursor: pointer;
+    }
+    
+    .ny_opgave {
+     height: 175px; 
+     display: flex; 
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 25px;
+    }
+    
+    .Task_name {
+        height: 60px;
+        width: 271px;
+        background: $white; 
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+    }
+    
+    .When {
+        height: 60px;
+        width: 271px;
+        background: $white; 
+        border-radius: 15px; 
+        box-shadow: $box-shadow;
+        cursor: pointer; 
+        position: relative; 
+        top: 10px; 
+    }
+    
+    .hvem {
+        height: 45px;
+        width: 150px;
+        margin-top: 50px;  
+        margin-left: 20px; 
+    }
+    
+    .Pr_container {
+        height: 275px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+    
+    .personer {
+        height: 50px;
+        width: 271px; 
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .Todo_btn {
+        height: 35px;
+        width: 75px;
+        border-radius: 15px;
+        border-style: none;
+        background-color: $button-blue;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+    }
+
+    // styling til overskriften componenten på forsiden (props) 
+
+
+    .overskrift {
+        h2 {
+            position: relative; 
+            top: 10px; 
+            left: 10px; 
+        } 
+    }
+  
+
+    // styling til personIkon componenten 
+    .ikon {
+        height: 35px; 
+        width: 35px;
+        border-radius: 50%;
+        background: $white; 
+        box-shadow: $box-shadow;
+        position: relative;
+        right: 10px; 
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // styling til switch knappen 
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: lightgrey;
+            transition: 0.4s;
+        }
+        
+        .slider:before {
+            position: absolute; 
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px; 
+            background: $white; 
+            transition: 0.4s;
+        }
+        
+        
+        input:checked + .slider {
+            background: $button-blue;
+            box-shadow: $box-shadow;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        
+        .slider.rounded {
+            border-radius: 34px;
+        }
+        
+        .slider.rounded:before {
+            border-radius: 50%;
+        }
+// end styling of frontpage and add new task
+
+// Styling of profile
+//Dunia
+.back-profile{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    max-width: 100%;
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+      
+    h1 {
+        padding-bottom: 20px;
+        font-family: $font-one;
+    }
+
+    .profilicon {
+        padding: 10px;
+        width: 70px;
+        height: 70px;
+        background: #F9F9F9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 70px;
+        margin-bottom: 20px;
+        }
+        
+    p {
+        padding: 5px;
+    }
+
+    .profile-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            align-items: center;
+
+
+            #change {
+                width: 200px;
+                padding: 15px 30px;
+                border-radius: 25px;
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+                color: $font-color-black;
+                background-color: $button-blue;
+                box-shadow: $box-shadow;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+    }
+    .profiletext {
+        width: 250px;
+        margin: 5px auto;
+        padding: 15px 30px;
+        color: gray;
+        // text-align: center;
+        border-radius: 25px;
+        border: none;
+        font-size: 14px;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+    }
+
+
+
+}
+
+// styling of personal tasks
+// Dunia
+.personlighousehold-page {
+    margin: 0;
+  
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px;
+      max-width: 100%;
+  
+      .backbtn {
+        padding: 18px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        width: 55px;
+        height: 55px;
+        background: #F9F9F9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+      }
+      a:-webkit-any-link {
+        color: #000;
+        cursor: pointer;
+    }
+    }
+    
+    .personalBtn {
+      position: relative;
+      display: flex;
+      justify-content: right;
+      font-family: $font-two;
+      cursor: pointer;
+    }
+    
+    .personalBtn-container{
+      background-color: $button-orange;
+      width: 200px;
+      height: 50px;
+      border-radius: 25px;
+      display: flex;
+      box-shadow: $box-shadow;
+      
+        #PersonalOrHouseBtn{
+         width: 100px;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0;
+         text-decoration: none;
+         color: black;
+        }
+      }
+    
+    .active {
+      border-radius: 25px;
+      background-color: $white;
+    }
+    
+    .inactive {
+      background: transparent;
+    }
+  
+    h1 {
+      font-family: $font-one;
+    }
+    
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+      margin: 20px;
+      background: #F9F9F9;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+    }
+    
+    .Container1 {
+      margin: 10px 20px 10px 30px;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;  padding-bottom: 22px;
+      border: 1px solid #F9F9F9;
+      max-width: 100%;
+      
+    }
+    
+    .opgave_container11, .Opgave_container22 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      
+    }
+    .Opgave11, .Opgave22 {
+      padding-left: 20px;
+      padding-top: 20px;
+      text-align: left;
+      width: 100%;
+    }
+    
+    .expand {
+      font-size: 30px;
+      background: #F9F9F9;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      text-align: right;
+      padding: 5px 20px 5px 0;
+    }
+    
+    h1 {
+      margin: 32px 0;
+      font-size: 33px;
+      text-align: center;
+    }
+    
+    h2 {
+      text-align: left;
+      padding: 10px;
+      font-family: $font-two;
+    }
+    
+    .complete {
+      text-decoration: line-through;
+    }
+  }
+// end of styling for personal tasks

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import '../styles/nav.css'
+// import '../styles/nav.css'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 import {FiUsers, FiSettings} from 'react-icons/fi'
 
