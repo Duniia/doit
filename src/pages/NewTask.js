@@ -19,7 +19,7 @@ export default function NewTask({ addTodo }) {
       <section className="wrapper">
         <div className="T">
           <div className="tilbage_pil">
-            <NavLink to="/">
+            <NavLink to="/forside">
               <BsArrowLeft />
             </NavLink>
           </div>
