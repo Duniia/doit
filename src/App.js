@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Nav from './components/Nav';
 import './styles/nav.css';
 import './styles/personlig.css';
 import './styles/variables.css';
@@ -21,7 +20,6 @@ import Profil from "./pages/Profil";
 function App() {
   return (
     <>
-      {/* <Nav/> */}
       <Routes>
         <Route path="forside" element={<Forside />}/>
         <Route path="Personlig" element={<Personlig />}/>
