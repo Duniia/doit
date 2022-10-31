@@ -38,7 +38,7 @@ export default function SettingsPage() {
     </div>
 
   <div className="column-settings">
-    <NavLink to="/" className="button-log" type="button" style={{marginTop:'10px' }}>
+    <NavLink to="/" className="button-log" type="button">
       Log out
     </NavLink>
           </div>
