@@ -20,7 +20,7 @@ export default function SettingsPage() {
   {/*intro*/}
   <main className="settingsmain"
     style={{
-          backgroundColor: isActive ? ' rgb(203,255,212, 0.69), rgb(199,242,255, 0.82), rgb(148,236,255, 0.03)' : ''
+          backgroundColor: isActive ? ' rgb(203,255,212, 0.69)' : ''
         }}>
 
   <section className="settings">
