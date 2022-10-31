@@ -13,7 +13,7 @@ import AddTask from '../components/AddTask';
 function Personlig() {
 
   return (
-    <>
+    <section className='personal-page'>
     <section className="personlighousehold-page">
     <div className='topnav'>
       <div className="backbtn">
@@ -75,7 +75,7 @@ function Personlig() {
       </NavLink>
      </section> 
    <Nav/>
-    </>
+    </section>
   )
 }
 

@@ -15,7 +15,7 @@ export default function NewTask({ addTodo }) {
   const [title, setTitle] = useState("");
 
   return (
-    <>
+    <section className="addTask">
       <section className="wrapper">
         <div className="T">
           <div className="tilbage_pil">
@@ -55,6 +55,6 @@ export default function NewTask({ addTodo }) {
           />
         </div>
       <Nav></Nav>
-    </>
+    </section>
   );
 }

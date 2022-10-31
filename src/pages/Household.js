@@ -13,7 +13,7 @@ import AddTask from '../components/AddTask';
 function Household() {
   
     return (
-      <>
+      <section className='household'>
     <section className="personlighousehold-page">
     <div className='topnav'>
       <div className="backbtn">
@@ -76,7 +76,7 @@ function Household() {
       </NavLink>
      </section> 
    <Nav/>
-    </>
+    </section>
   )
 }
 export default Household;

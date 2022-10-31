@@ -16,43 +16,43 @@ import Nav from '../components/Nav';
 export default function Forside({todos}) {
 
   return (
-    <>
-    <section className="Top">
-      <h1>doit</h1>
+    <section className='frontpage'>
+      <section className="Top">
+        <h1>doit</h1>
 
-      <NavLink to="/Profil"><PersonIkon className="profilikon"/></NavLink>
-     
-     </section>
+        <NavLink to="/Profil"><PersonIkon className="profilikon"/></NavLink>
+      
+      </section>
 
-       <section className="box">
-        <div className="Container" >
-          <Overskrift name="Your next task"/>
+        <section className="box">
+          <div className="Container" >
+            <Overskrift name="Your next task"/>
 
-          {todos.map(todo =>(<div className="Opgave1">
-          <Opgaver name={todo.category} />
-           <div className="opgave_container">
-            <OpgaveTitle name={todo.title} />
-           <Button />
+            {todos.map(todo =>(<div className="Opgave1">
+            <Opgaver name={todo.category} />
+            <div className="opgave_container">
+              <OpgaveTitle name={todo.title} />
+            <Button />
+            </div>
+          </div>))}  
+
+        
+        
+
           </div>
-        </div>))}  
+        </section>
 
+      <section className="List_container">
+        <Lists/>
+        
+      </section>
+
+      <section className="addnew">
+        <NavLink to="/NewTask"><AddTask />
+        </NavLink>
+      </section> 
       
-      
-
-     </div>
-   </section>
-
-    <section className="List_container">
-      <Lists/>
-      
-     </section>
-
-     <section className="addnew">
-      <NavLink to="/NewTask"><AddTask />
-      </NavLink>
-     </section> 
-     
-     <Nav/>
-  </>
+      <Nav/>
+    </section>
   );
-}; 
+}
