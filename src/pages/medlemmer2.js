@@ -2,7 +2,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineLine } from "react-icons/ai";
 import { AiFillDownCircle } from "react-icons/ai";
 import { GrAdd } from "react-icons/gr";
-import Nav from './components/Nav';
+import Nav from '../components/Nav';
 //  Nadia
 
 export default function MedlemmerPage() {

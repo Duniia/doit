@@ -3,7 +3,7 @@ import React from 'react'
 import {BsPersonFill} from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
 import {IoMdArrowBack} from 'react-icons/io'
-import Nav from './components/Nav';
+import Nav from '../components/Nav';
 
 function Profil() {
   return (

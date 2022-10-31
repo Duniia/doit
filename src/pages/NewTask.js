@@ -5,7 +5,7 @@ import {BsArrowLeft} from 'react-icons/bs'
 import PersonIkon from '../components/PersonIkon';
 import InsertText from '../components/InsertText';
 import Switch from '../components/Switch';
-import Nav from './components/Nav';
+import Nav from '../components/Nav';
 
 
 export default function NewTask() {

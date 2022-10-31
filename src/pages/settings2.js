@@ -2,7 +2,7 @@ import {useState} from 'react';
 import { AiOutlineUser } from "react-icons/ai";
 import { BsToggleOn } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
-import Nav from './components/Nav';
+import Nav from '../components/Nav';
 //  Nadia
 
 export default function SettingsPage() {
