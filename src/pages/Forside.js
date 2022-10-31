@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from "react-router-dom";
 import PersonIkon from '../components/PersonIkon';
 import Opgaver from '../components/Opgaver';
