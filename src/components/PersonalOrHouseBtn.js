@@ -1,4 +1,4 @@
-// Kodet af Dunia Ahmed
+// Kodet af Dunia, credit til Rikke's signin/register component. 
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
