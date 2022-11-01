@@ -1,4 +1,4 @@
-// Kodet af Dunia
+// Kodet af Dunia Ahmed
 import React from 'react';
 import Button from '../components/Button';
 import Overskrift from '../components/Overskrift';
