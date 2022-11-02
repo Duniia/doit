@@ -5,7 +5,7 @@ import Overskrift from '../components/Overskrift';
 import OpgaveTitle from '../components/OpgaveTitle';
 import {CgArrowsExpandRight} from 'react-icons/cg'
 import {IoMdArrowBack} from 'react-icons/io'
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import PersonalOrHouseBtn from '../components/PersonalOrHouseBtn';
 import Nav from '../components/Nav';
 import AddTask from '../components/AddTask';
@@ -71,8 +71,8 @@ function Personlig() {
    </section>
    </section>
    <section className="addnew">
-      <NavLink to="/NewTask"><AddTask />
-      </NavLink>
+      <Link to="/NewTask"><AddTask />
+      </Link>
      </section> 
    <Nav/>
     </section>
